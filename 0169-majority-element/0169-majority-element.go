@@ -4,12 +4,12 @@ func majorityElement(nums []int) int {
     if 1 <= n && n <= 50000 {
         count := 0
         var x int
-        for i, p := 0, &x; i < n; i++ {
+        for i := 0; i < n; i++ {
             if count == 0 {
-                *p = nums[i]
+                x = nums[i]
             }
             
-            if nums[i] == *p {
+            if nums[i] == x {
                 count++
             } else {
                 count --
