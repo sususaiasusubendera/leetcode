@@ -5,15 +5,15 @@ func removeDuplicates(nums []int) int {
             return 0
         }
 
-        j := 1
+        u := 1
         for i := 1; i < len(nums); i++ {
             if nums[i] != nums[i-1] {
-                nums[j] = nums[i]
-                j++
+                nums[u] = nums[i]
+                u++
             }
         }
-        nums = nums[:j]
-        return j
+        nums = nums[:u]
+        return u
     }
     return -1
 } 
