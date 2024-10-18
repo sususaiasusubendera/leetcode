@@ -3,13 +3,13 @@ func majorityElement(nums []int) int {
     // constraint: 1 <= n <= 5 * 10^4
     if 1 <= n && n <= 50000 {
         count := 0
-        x := nums[0]
-        for i := 0; i < n; i++ {
+        var x int
+        for i, p := 0, &x; i < n; i++ {
             if count == 0 {
-                x = nums[i]
+                *p = nums[i]
             }
             
-            if nums[i] == x {
+            if nums[i] == *p {
                 count++
             } else {
                 count --
