@@ -49,4 +49,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0392-is-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0392-is-subsequence) |
+## Database
+|  |
+| ------- |
+| [0595-big-countries](https://github.com/sususaiasusubendera/leetcode/tree/master/0595-big-countries) |
 <!---LeetCode Topics End-->
