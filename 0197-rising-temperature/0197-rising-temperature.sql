@@ -1,3 +1,3 @@
 # Write your MySQL query statement below
-SELECT n.id FROM Weather m INNER JOIN Weather n ON m.recordDate = DATE_SUB(n.recordDate, INTERVAL 1 DAY)
-WHERE m.temperature < n.temperature;
+SELECT t.id FROM Weather y INNER JOIN Weather t ON y.recordDate = DATE_SUB(t.recordDate, INTERVAL 1 DAY)
+WHERE y.temperature < t.temperature;
