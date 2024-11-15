@@ -3,7 +3,7 @@ func isAnagram(s string, t string) bool {
         return false
     }
 
-    m := map[rune]int{} // handel unicode characters also (before: map[byte]int{})
+    m := map[rune]int{} // handle unicode characters also (before: map[byte]int{})
     for _, c := range s {
         m[c]++
     }
