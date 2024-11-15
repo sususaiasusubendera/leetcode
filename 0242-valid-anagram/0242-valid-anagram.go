@@ -3,19 +3,19 @@ func isAnagram(s string, t string) bool {
         return false
     }
 
-    m := map[byte]int{}
-    for i, _ := range s {
-        m[s[i]] += 1
+    m := map[rune]int{} // handel unicode characters also (before: map[byte]int{})
+    for _, c := range s {
+        m[c]++
     }
 
-    for i, _ := range t {
-        if _, exist := m[t[i]]; exist {
-            m[t[i]] -= 1
+    for _, c := range t {
+        if _, exist := m[c]; exist {
+            m[c]--
         }
     }
 
-    for i, _ := range s {
-        if m[s[i]] != 0 {
+    for _, count := range m {
+        if count != 0 {
             return false
         }
     }
