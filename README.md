@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/sususaiasusubendera/leetcode/tree/master/0238-product-of-array-except-self) |
+| [0274-h-index](https://github.com/sususaiasusubendera/leetcode/tree/master/0274-h-index) |
 ## Two Pointers
 |  |
 | ------- |
@@ -89,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0088-merge-sorted-array](https://github.com/sususaiasusubendera/leetcode/tree/master/0088-merge-sorted-array) |
 | [0169-majority-element](https://github.com/sususaiasusubendera/leetcode/tree/master/0169-majority-element) |
 | [0242-valid-anagram](https://github.com/sususaiasusubendera/leetcode/tree/master/0242-valid-anagram) |
+| [0274-h-index](https://github.com/sususaiasusubendera/leetcode/tree/master/0274-h-index) |
 ## Counting
 |  |
 | ------- |
@@ -169,4 +171,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/sususaiasusubendera/leetcode/tree/master/0155-min-stack) |
+## Counting Sort
+|  |
+| ------- |
+| [0274-h-index](https://github.com/sususaiasusubendera/leetcode/tree/master/0274-h-index) |
 <!---LeetCode Topics End-->
