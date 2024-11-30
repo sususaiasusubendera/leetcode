@@ -11,9 +11,9 @@ func candy(ratings []int) int {
         } else if ratings[i] < ratings[i-1] {
             down++
             up = 0
-            candies += down + 1
-            if peak >= down {
-                candies--
+            candies += down
+            if peak < down {
+                candies++
             }
         } else {
             up, down, peak = 0, 0, 0
