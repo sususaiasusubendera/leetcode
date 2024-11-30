@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/sususaiasusubendera/leetcode/tree/master/0036-valid-sudoku) |
 | [0045-jump-game-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0045-jump-game-ii) |
 | [0049-group-anagrams](https://github.com/sususaiasusubendera/leetcode/tree/master/0049-group-anagrams) |
+| [0054-spiral-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0055-jump-game) |
 | [0066-plus-one](https://github.com/sususaiasusubendera/leetcode/tree/master/0066-plus-one) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
@@ -173,6 +174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/sususaiasusubendera/leetcode/tree/master/0036-valid-sudoku) |
+| [0054-spiral-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0054-spiral-matrix) |
 ## Stack
 |  |
 | ------- |
@@ -234,4 +236,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0112-path-sum) |
 | [0226-invert-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/0226-invert-binary-tree) |
+## Simulation
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0054-spiral-matrix) |
 <!---LeetCode Topics End-->
