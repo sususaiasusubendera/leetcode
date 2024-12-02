@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0128-longest-consecutive-sequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0134-gas-station](https://github.com/sususaiasusubendera/leetcode/tree/master/0134-gas-station) |
 | [0135-candy](https://github.com/sususaiasusubendera/leetcode/tree/master/0135-candy) |
+| [0136-single-number](https://github.com/sususaiasusubendera/leetcode/tree/master/0136-single-number) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/sususaiasusubendera/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/sususaiasusubendera/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/sususaiasusubendera/leetcode/tree/master/0169-majority-element) |
@@ -249,5 +250,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/sususaiasusubendera/leetcode/tree/master/0136-single-number) |
 | [0222-count-complete-tree-nodes](https://github.com/sususaiasusubendera/leetcode/tree/master/0222-count-complete-tree-nodes) |
 <!---LeetCode Topics End-->
