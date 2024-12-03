@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0027-remove-element](https://github.com/sususaiasusubendera/leetcode/tree/master/0027-remove-element) |
 | [0035-search-insert-position](https://github.com/sususaiasusubendera/leetcode/tree/master/0035-search-insert-position) |
 | [0036-valid-sudoku](https://github.com/sususaiasusubendera/leetcode/tree/master/0036-valid-sudoku) |
+| [0042-trapping-rain-water](https://github.com/sususaiasusubendera/leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0045-jump-game-ii) |
 | [0049-group-anagrams](https://github.com/sususaiasusubendera/leetcode/tree/master/0049-group-anagrams) |
 | [0054-spiral-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0054-spiral-matrix) |
@@ -60,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/sususaiasusubendera/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/sususaiasusubendera/leetcode/tree/master/0027-remove-element) |
+| [0042-trapping-rain-water](https://github.com/sususaiasusubendera/leetcode/tree/master/0042-trapping-rain-water) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/sususaiasusubendera/leetcode/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/sususaiasusubendera/leetcode/tree/master/0125-valid-palindrome) |
@@ -122,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/sususaiasusubendera/leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0055-jump-game) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/sususaiasusubendera/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -184,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/sususaiasusubendera/leetcode/tree/master/0020-valid-parentheses) |
+| [0042-trapping-rain-water](https://github.com/sususaiasusubendera/leetcode/tree/master/0042-trapping-rain-water) |
 | [0071-simplify-path](https://github.com/sususaiasusubendera/leetcode/tree/master/0071-simplify-path) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/sususaiasusubendera/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/sususaiasusubendera/leetcode/tree/master/0155-min-stack) |
@@ -252,4 +256,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0136-single-number](https://github.com/sususaiasusubendera/leetcode/tree/master/0136-single-number) |
 | [0222-count-complete-tree-nodes](https://github.com/sususaiasusubendera/leetcode/tree/master/0222-count-complete-tree-nodes) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/sususaiasusubendera/leetcode/tree/master/0042-trapping-rain-water) |
 <!---LeetCode Topics End-->
