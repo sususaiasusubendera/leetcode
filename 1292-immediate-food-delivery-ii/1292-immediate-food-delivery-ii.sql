@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-WITH 
+WITH # CTE
     FirstOrder AS (
         SELECT
             customer_id,
