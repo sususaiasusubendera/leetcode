@@ -11,3 +11,4 @@ SELECT
 FROM Activity a
 INNER JOIN FirstLogin f
 ON a.player_id = f.player_id AND DATE_ADD(f.first_login_date, INTERVAL 1 DAY) = a.event_date
+# better logic
