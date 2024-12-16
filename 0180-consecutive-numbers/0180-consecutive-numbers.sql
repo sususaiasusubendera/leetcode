@@ -1,8 +1,13 @@
 # Write your MySQL query statement below
-SELECT DISTINCT l1.num AS ConsecutiveNums
-FROM Logs l1
-INNER JOIN Logs l2 ON l1.id = l2.id - 1
-INNER JOIN Logs l3 ON l1.id = l3.id - 2
-WHERE l1.num = l2.num AND l2.num = l3.num
+# 'lead' solution
+SELECT DISTINCT num AS ConsecutiveNums
+FROM (
+    SELECT
+        num,
+        LEAD(num) OVER (ORDER BY id) AS next_num1,
+        LEAD(num, 2) OVER (ORDER BY id) AS next_num2
+    FROM Logs
+) temp
+WHERE num = next_num1 AND num = next_num2
 
 
