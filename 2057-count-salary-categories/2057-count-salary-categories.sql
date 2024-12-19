@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-# CTE, left join
+# CTE, join, union
 WITH CategoryCount AS (
     SELECT
         CASE
