@@ -1,17 +1,15 @@
 # Write your MySQL query statement below
-# authentic idea
-WITH CumulativeWeight AS (
-    SELECT
-        person_id,
-        person_name,
-        weight,
-        SUM(weight) OVER (ORDER BY turn) AS cumulative_weight,
-        ROW_NUMBER() OVER (ORDER BY turn) AS row_num
-    FROM Queue
-)
-
+# MySQL variable
 SELECT person_name
-FROM CumulativeWeight
+FROM (
+    SELECT
+        person_name,
+        @cumulative_weight := @cumulative_weight + weight AS cumulative_weight
+    FROM 
+        Queue, 
+        (SELECT @cumulative_weight := 0) init
+    ORDER BY turn
+) cumulative
 WHERE cumulative_weight <= 1000
-ORDER BY row_num DESC
+ORDER BY cumulative_weight DESC
 LIMIT 1
