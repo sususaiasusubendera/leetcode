@@ -12,13 +12,14 @@ CountID AS (
         COUNT(ID) AS num
     FROM RequesterAccepterAll
     GROUP BY id
-)   
+),
+IDWithMostFriends AS (
+    SELECT MAX(num) AS max_num
+    FROM CountID
+)
 
 SELECT
     id,
     num
 FROM CountID
-WHERE num IN (
-    SELECT MAX(num)
-    FROM CountID
-)
+WHERE num = (SELECT max_num FROM IDWIthMostFriends)
