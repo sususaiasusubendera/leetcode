@@ -1,4 +1,5 @@
 # Write your MySQL query statement below
+# less 'WHERE'
 WITH AvgFeb AS (
     SELECT
         movie_id,
@@ -9,40 +10,31 @@ WITH AvgFeb AS (
         created_at < '2020-03-01'
     GROUP BY movie_id
 ),
-HiAvgMov AS (
-    SELECT m.title
+RankedMovie AS (
+    SELECT
+        af.movie_id,
+        m.title,
+        af.average_rating,
+        RANK() OVER (ORDER BY af.average_rating DESC, m.title) AS rank_movie
     FROM AvgFeb af
     INNER JOIN Movies m
     ON af.movie_id = m.movie_id
-    WHERE average_rating IN (
-        SELECT MAX(average_rating)
-        FROM AvgFeb
-    )
-    ORDER BY m.title
-    LIMIT 1
 ),
-UserTotalRated AS (
+RankedUserTotalRated AS (
     SELECT
         u.name,
-        COUNT(mr.user_id) AS total_rated
+        COUNT(mr.movie_id) AS total_rated,
+        RANK() OVER (ORDER BY COUNT(mr.movie_id) DESC, u.name) AS rank_user
     FROM MovieRating mr
     INNER JOIN Users u
     ON mr.user_id = u.user_id
     GROUP BY mr.user_id
-),
-MostTotalRatedUser AS (
-    SELECT name
-    FROM UserTotalRated
-    WHERE total_rated IN (
-        SELECT MAX(total_rated)
-        FROM UserTotalRated
-    )
-    ORDER BY name
-    LIMIT 1
 )
 
-SELECT name AS results
-FROM MostTotalRatedUser 
+SELECT name AS results 
+FROM RankedUserTotalRated 
+WHERE rank_user = 1
 UNION ALL
-SELECT title
-FROM HiAvgMov
+SELECT title 
+FROM RankedMovie 
+WHERE rank_movie = 1
