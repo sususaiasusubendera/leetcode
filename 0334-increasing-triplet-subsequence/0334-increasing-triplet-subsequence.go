@@ -1,15 +1,45 @@
 func increasingTriplet(nums []int) bool {
-    first, second := math.MaxInt, math.MaxInt
-    for i := 0; i < len(nums); i++ {
-        if nums[i] <= first {
-            first = nums[i]
-        } else if nums[i] <= second {
-            second = nums[i]
-        } else {
+    if len(nums) <= 2 {
+        return false
+    }   
+
+    leftMin, rightMax := make([]int, len(nums)), make([]int, len(nums))
+    
+    // left preprocessing
+    leftMin[0] = nums[0]
+    for i := 1; i < len(nums); i++ {
+        leftMin[i] = min(leftMin[i-1], nums[i])
+    }
+
+    // right preprocessing
+    rightMax[len(nums)-1] = nums[len(nums)-1]
+    for i := len(nums)-2; i >= 0; i-- {
+        rightMax[i] = max(rightMax[i+1], nums[i])
+    }
+
+    for i := 1; i < len(nums)-1; i++ {
+        if leftMin[i-1] < nums[i] && nums[i] < rightMax[i+1] {
             return true
         }
     }
+
     return false
 }
+// greedy, preprocessing
+// space: O(n); time: O(n)
 
-// P.S. I found a little logical fallacy (for the index condition) in this solution (for example, this test case: [20, 100, 10, 12, 5, 13]), but OK (CMIIW).
+func max(a, b int) int {
+    if a > b {
+        return a
+    } else {
+        return b
+    }
+}
+
+func min(a, b int) int {
+    if a < b {
+        return a
+    } else {
+        return b
+    }
+}
