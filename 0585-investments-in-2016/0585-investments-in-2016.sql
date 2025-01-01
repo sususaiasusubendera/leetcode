@@ -1,27 +1,19 @@
 # Write your MySQL query statement below
-WITH OnePolicyholderOnecity AS (
-    SELECT 
-        pid,
-        CONCAT(lat, lon) AS ConcatLatLon,
-        COUNT(CONCAT(lat, lon)) AS CountPolicyholder
+WITH UniqueCity AS (
+    SELECT lat, lon
     FROM Insurance
-    GROUP BY ConcatLatLon
-    HAVING CountPolicyholder = 1
+    GROUP BY lat, lon
+    HAVING COUNT(*) = 1
 ),
-SameTIV2015PID AS (
-    SELECT pid
+SameTIV2015 AS (
+    SELECT tiv_2015
     FROM Insurance
-    WHERE tiv_2015 IN (
-        SELECT
-            tiv_2015
-        FROM Insurance
-        GROUP BY tiv_2015
-        HAVING COUNT(tiv_2015) > 1
-    )
+    GROUP BY tiv_2015
+    HAVING COUNT(*) > 1
 )
 
 SELECT ROUND(SUM(tiv_2016), 2) AS tiv_2016
 FROM Insurance
-WHERE
-    pid IN (SELECT pid FROM OnePolicyholderOnecity) AND
-    pid IN (SELECT pid FROM SameTIV2015PID)
+WHERE 
+    tiv_2015 IN (SELECT tiv_2015 FROM SameTIV2015) AND
+    (lat, lon) IN (SELECT lat, lon FROM UniqueCity)
