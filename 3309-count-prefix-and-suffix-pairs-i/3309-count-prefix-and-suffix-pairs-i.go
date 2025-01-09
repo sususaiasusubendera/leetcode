@@ -11,8 +11,10 @@ func countPrefixSuffixPairs(words []string) int {
 }
 
 func isPrefixAndSuffix(sub, str string) bool {
-    if len(sub) <= len(str) && sub == str[:len(sub)] && sub == str[len(str)-len(sub):] {
+    if len(sub) <= len(str) && strings.HasPrefix(str, sub) && strings.HasSuffix(str, sub) {
         return true
     }
     return false
 }
+
+// prefix suffix checker built-in function in Go
