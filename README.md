@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/sususaiasusubendera/leetcode/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0392-is-subsequence) |
 | [0952-word-subsets](https://github.com/sususaiasusubendera/leetcode/tree/master/0952-word-subsets) |
+| [1502-construct-k-palindrome-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/1502-construct-k-palindrome-strings) |
 | [1524-string-matching-in-an-array](https://github.com/sususaiasusubendera/leetcode/tree/master/1524-string-matching-in-an-array) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/sususaiasusubendera/leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1894-merge-strings-alternately](https://github.com/sususaiasusubendera/leetcode/tree/master/1894-merge-strings-alternately) |
@@ -122,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/sususaiasusubendera/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/sususaiasusubendera/leetcode/tree/master/0383-ransom-note) |
 | [0952-word-subsets](https://github.com/sususaiasusubendera/leetcode/tree/master/0952-word-subsets) |
+| [1502-construct-k-palindrome-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/1502-construct-k-palindrome-strings) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/sususaiasusubendera/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 ## Divide and Conquer
 |  |
@@ -141,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0169-majority-element](https://github.com/sususaiasusubendera/leetcode/tree/master/0169-majority-element) |
 | [0383-ransom-note](https://github.com/sususaiasusubendera/leetcode/tree/master/0383-ransom-note) |
+| [1502-construct-k-palindrome-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/1502-construct-k-palindrome-strings) |
 ## Math
 |  |
 | ------- |
@@ -233,6 +236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0135-candy](https://github.com/sususaiasusubendera/leetcode/tree/master/0135-candy) |
 | [0334-increasing-triplet-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0334-increasing-triplet-subsequence) |
 | [0605-can-place-flowers](https://github.com/sususaiasusubendera/leetcode/tree/master/0605-can-place-flowers) |
+| [1502-construct-k-palindrome-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/1502-construct-k-palindrome-strings) |
 ## Binary Search
 |  |
 | ------- |
