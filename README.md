@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0334-increasing-triplet-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0334-increasing-triplet-subsequence) |
 | [0380-insert-delete-getrandom-o1](https://github.com/sususaiasusubendera/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0605-can-place-flowers](https://github.com/sususaiasusubendera/leetcode/tree/master/0605-can-place-flowers) |
+| [0682-baseball-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0682-baseball-game) |
 | [0952-word-subsets](https://github.com/sususaiasusubendera/leetcode/tree/master/0952-word-subsets) |
 | [1524-string-matching-in-an-array](https://github.com/sususaiasusubendera/leetcode/tree/master/1524-string-matching-in-an-array) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/sususaiasusubendera/leetcode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
@@ -272,6 +273,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/sususaiasusubendera/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/sususaiasusubendera/leetcode/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/sususaiasusubendera/leetcode/tree/master/0224-basic-calculator) |
+| [0682-baseball-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0682-baseball-game) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sususaiasusubendera/leetcode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 ## Design
 |  |
@@ -339,6 +341,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0054-spiral-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0054-spiral-matrix) |
 | [0068-text-justification](https://github.com/sususaiasusubendera/leetcode/tree/master/0068-text-justification) |
+| [0682-baseball-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0682-baseball-game) |
 ## Bit Manipulation
 |  |
 | ------- |
