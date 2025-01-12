@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1894-merge-strings-alternately](https://github.com/sususaiasusubendera/leetcode/tree/master/1894-merge-strings-alternately) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/sususaiasusubendera/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/sususaiasusubendera/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sususaiasusubendera/leetcode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/sususaiasusubendera/leetcode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2465-shifting-letters-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sususaiasusubendera/leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
@@ -237,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0334-increasing-triplet-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0334-increasing-triplet-subsequence) |
 | [0605-can-place-flowers](https://github.com/sususaiasusubendera/leetcode/tree/master/0605-can-place-flowers) |
 | [1502-construct-k-palindrome-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/1502-construct-k-palindrome-strings) |
+| [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sususaiasusubendera/leetcode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 ## Binary Search
 |  |
 | ------- |
@@ -270,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/sususaiasusubendera/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/sususaiasusubendera/leetcode/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/sususaiasusubendera/leetcode/tree/master/0224-basic-calculator) |
+| [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sususaiasusubendera/leetcode/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 ## Design
 |  |
 | ------- |
