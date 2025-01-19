@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0274-h-index](https://github.com/sususaiasusubendera/leetcode/tree/master/0274-h-index) |
 | [0334-increasing-triplet-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0334-increasing-triplet-subsequence) |
 | [0380-insert-delete-getrandom-o1](https://github.com/sususaiasusubendera/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0407-trapping-rain-water-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0605-can-place-flowers](https://github.com/sususaiasusubendera/leetcode/tree/master/0605-can-place-flowers) |
 | [0682-baseball-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0682-baseball-game) |
 | [0952-word-subsets](https://github.com/sususaiasusubendera/leetcode/tree/master/0952-word-subsets) |
@@ -275,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/sususaiasusubendera/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/sususaiasusubendera/leetcode/tree/master/0073-set-matrix-zeroes) |
+| [0407-trapping-rain-water-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sususaiasusubendera/leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 ## Stack
 |  |
@@ -339,6 +341,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0112-path-sum) |
 | [0226-invert-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/0226-invert-binary-tree) |
+| [0407-trapping-rain-water-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sususaiasusubendera/leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 ## Binary Tree
 |  |
@@ -399,6 +402,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0407-trapping-rain-water-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sususaiasusubendera/leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 ## Shortest Path
 |  |
