@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0605-can-place-flowers](https://github.com/sususaiasusubendera/leetcode/tree/master/0605-can-place-flowers) |
 | [0682-baseball-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0682-baseball-game) |
 | [0952-word-subsets](https://github.com/sususaiasusubendera/leetcode/tree/master/0952-word-subsets) |
+| [1396-count-servers-that-communicate](https://github.com/sususaiasusubendera/leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sususaiasusubendera/leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1524-string-matching-in-an-array](https://github.com/sususaiasusubendera/leetcode/tree/master/1524-string-matching-in-an-array) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/sususaiasusubendera/leetcode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
@@ -158,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0169-majority-element](https://github.com/sususaiasusubendera/leetcode/tree/master/0169-majority-element) |
 | [0383-ransom-note](https://github.com/sususaiasusubendera/leetcode/tree/master/0383-ransom-note) |
+| [1396-count-servers-that-communicate](https://github.com/sususaiasusubendera/leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1502-construct-k-palindrome-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/1502-construct-k-palindrome-strings) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/sususaiasusubendera/leetcode/tree/master/3455-minimum-length-of-string-after-operations) |
 ## Math
@@ -274,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [1396-count-servers-that-communicate](https://github.com/sususaiasusubendera/leetcode/tree/master/1396-count-servers-that-communicate) |
 ## Matrix
 |  |
 | ------- |
@@ -282,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/sususaiasusubendera/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0407-trapping-rain-water-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0407-trapping-rain-water-ii) |
+| [1396-count-servers-that-communicate](https://github.com/sususaiasusubendera/leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sususaiasusubendera/leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1876-map-of-highest-peak](https://github.com/sususaiasusubendera/leetcode/tree/master/1876-map-of-highest-peak) |
 | [2145-grid-game](https://github.com/sususaiasusubendera/leetcode/tree/master/2145-grid-game) |
@@ -341,6 +345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0112-path-sum) |
 | [0226-invert-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/0226-invert-binary-tree) |
+| [1396-count-servers-that-communicate](https://github.com/sususaiasusubendera/leetcode/tree/master/1396-count-servers-that-communicate) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -350,6 +355,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0112-path-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0112-path-sum) |
 | [0226-invert-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/0226-invert-binary-tree) |
 | [0407-trapping-rain-water-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0407-trapping-rain-water-ii) |
+| [1396-count-servers-that-communicate](https://github.com/sususaiasusubendera/leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sususaiasusubendera/leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1876-map-of-highest-peak](https://github.com/sususaiasusubendera/leetcode/tree/master/1876-map-of-highest-peak) |
 ## Binary Tree
