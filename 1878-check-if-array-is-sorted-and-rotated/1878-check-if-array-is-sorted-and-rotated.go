@@ -1,34 +1,16 @@
 func check(nums []int) bool {
-    if len(nums) == 1 {
-        return true
-    }
-
-    // check if nums is sorted in non-decreasing order before any rotation
-    for j := 1; j < len(nums); j++ {
-        if nums[j] < nums[j-1] {
-            break
+    countRotate := 0 // rotation happens when nums[i] > nums[(i+1) % len(nums)] 
+    for i := 0; i < len(nums); i++ {
+        if nums[i] > nums[(i+1) % len(nums)] {
+            countRotate++
         }
-        if j == len(nums)-1 {
-            return true
+        if countRotate > 1 { // can't be sorted in non-decreasing order using rotation
+            return false
         }
     }
-        
-    // for each rotation, check if nums is sorted in non-decreasing order
-    for i := 0; i < len(nums)-1; i++ {
-        nums = append(nums, nums[0])
-        nums = nums[1:]
-        for j := 1; j < len(nums); j++ {
-            if nums[j] < nums[j-1] {
-                break
-            }
-            if j == len(nums)-1 {
-                return true
-            }
-        }
-    }
-    return false
+    return true
 }
 
-// brute force
-// time: O(n^2)
-// space: O(n)
+// one pass
+// time: O(n)
+// space: O(1)
