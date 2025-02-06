@@ -26,6 +26,7 @@ func tupleSameProduct(nums []int) int {
     // total: 2 × 2 × 2 = 8 (permutation)
 }
 
+// combination, permutation approach
 // time: O(n^2)
 // time: O(n)
 
