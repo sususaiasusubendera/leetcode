@@ -1,3 +1,4 @@
+
 func shortestCommonSupersequence(str1 string, str2 string) string {
   lcsStr := LCS(str1, str2)
   res := ""
@@ -45,3 +46,5 @@ func max(a, b string) string {
     }
     return b
 }
+
+// NOTICE ME SENPAI!!!
