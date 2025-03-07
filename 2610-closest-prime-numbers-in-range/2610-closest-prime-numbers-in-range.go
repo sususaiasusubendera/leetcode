@@ -31,3 +31,7 @@ func closestPrimes(left int, right int) []int {
     
     return []int{num1, num2}
 }
+
+// sieve of eratosthenes approach
+// time: O(n log log n)
+// space: O(n)
