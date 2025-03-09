@@ -24,3 +24,6 @@ func numberOfAlternatingGroups(colors []int, k int) int {
 
     return countAltGroups
 }
+
+// O(n)
+// O(n)
