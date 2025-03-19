@@ -4,8 +4,8 @@ func minOperations(nums []int) int {
         if nums[i-2] == 0 {
             count++
             nums[i-2] = 1
-            ops(&nums[i-1])
-            ops(&nums[i])
+            nums[i-1] ^= 1
+            nums[i] ^= 1
         }
     }
 
@@ -21,15 +21,6 @@ func minOperations(nums []int) int {
     return -1
 }
 
-// sliding window
+// sliding window, xor
 // time: O(n)
 // space: O(1)
-
-// helper
-func ops(n *int) {
-    if *n == 1 {
-        *n = 0
-    } else {
-        *n = 1
-    }
-}
