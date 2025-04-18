@@ -12,6 +12,8 @@ func countAndSay(n int) string {
 }
 
 // two pointer
+// time: O(n)
+// space: O(n)
 
 func parseRLE(str string) [][2]int {
     slc := [][2]int{}
