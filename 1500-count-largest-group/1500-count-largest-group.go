@@ -20,6 +20,9 @@ func countLargestGroup(n int) int {
     return count
 }
 
+// time: O(nlog(n))
+// space: log(n)
+
 func digitSum(n int) int {
     sum := 0
     for n != 0 {
