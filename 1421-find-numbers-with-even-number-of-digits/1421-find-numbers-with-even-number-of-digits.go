@@ -1,13 +1,13 @@
 func findNumbers(nums []int) int {
-    res := 0
-
-    for _, n := range nums {
-        if (n > 9 && n < 100) || (n > 999 && n < 10000) || n == 100000 {
-            res++
+    count := 0
+    for _, num := range nums {
+        if (9 < num && num < 100) || (999 < num && num < 10000) || num == 100000 {
+            count++
         }
     }
 
-    return res    
+    return count
 }
 
-// notice me senpai
+// time: O(n)
+// space: O(1)
