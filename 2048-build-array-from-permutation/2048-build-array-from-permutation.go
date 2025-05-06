@@ -1,11 +1,16 @@
 func buildArray(nums []int) []int {
-    result := make([]int, len(nums))
-    for i := 0; i < len(nums); i++ {
-        result[i] = nums[nums[i]]
+    n := len(nums)
+    for i := 0; i < n; i++ {
+        nums[i] = nums[i] + (n * (nums[nums[i]] % n))
     }
 
-    return result
+    for i := 0; i < n; i++ {
+        nums[i] /= n
+    }
+
+    return nums
 }
 
+// simple encode
 // time: O(n)
-// space: O(n)
+// space: O(1)
