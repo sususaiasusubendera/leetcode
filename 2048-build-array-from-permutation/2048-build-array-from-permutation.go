@@ -1,7 +1,11 @@
 func buildArray(nums []int) []int {
-    sol := make([]int, len(nums))
-    for idx, num := range nums {
-        sol[idx] = nums[num]
+    result := make([]int, len(nums))
+    for i := 0; i < len(nums); i++ {
+        result[i] = nums[nums[i]]
     }
-    return sol
+
+    return result
 }
+
+// time: O(n)
+// space: O(n)
