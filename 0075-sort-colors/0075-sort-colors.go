@@ -1,13 +1,18 @@
 func sortColors(nums []int)  {
-    for i := 0; i < len(nums)-1; i++ {
-        for j := i+1; j < len(nums); j++ {
-            if nums[i] > nums[j] {
-                nums[i], nums[j] = nums[j], nums[i]
-            }
+    freq := make([]int, 3) // freq's size is 3 because 2 is the greatest number in nums; 0 <= nums[i] <= 2
+    for _, num := range nums {
+        freq[num]++
+    }
+
+    idx := 0
+    for v, f := range freq {
+        for i := 0; i < f; i++ {
+            nums[idx] = v
+            idx++
         }
     }
 }
 
-// bubble sort
-// time: O(n^2)
+// counting sort
+// time: O(n)
 // space: O(1)
