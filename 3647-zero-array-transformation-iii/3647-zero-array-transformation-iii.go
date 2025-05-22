@@ -24,6 +24,8 @@ func maxRemoval(nums []int, queries [][]int) int {
 	return pq.Len()
 }
 
+// NOTICE ME SENPAI!!!
+
 type Heap []int
 
 func (h Heap) Len() int {
