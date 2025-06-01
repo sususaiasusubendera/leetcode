@@ -1,42 +1,18 @@
 func distributeCandies(n int, limit int) int64 {
-    result := 0
-    for i := 0; i <= min(limit, n); i++ {
-        if n-i > 2*limit {
-            // 0 <= b <= limit, 0 <= c <= limit
-            // b + c = n - a
-            // b + c <= 2 * limit
-            continue
-        }
-
-        // b <= limit, c <= limit, b + c = n - a = s
-        // c = s - b
-        // c <= limit
-        // s - b <= limit
-        // b >= s - limit
-        // s - limit <= b <= limit
-        // min(limit, s) - max(0, s - limit) + 1
-        result += min(n-i, limit) - max(0, n-i-limit) + 1
-    }
-
-    return int64(result)
+    return starsAndTwoBars(n+2) - 3*starsAndTwoBars(n-(limit+1)+2) + 3*starsAndTwoBars(n-2*(limit+1)+2) - starsAndTwoBars(n-3*(limit+1)+2)
 }
+
 // notice me senpai?
-// enumeration
-// time: O(n)
+// stars and bar
+// inclusion-exclusion
+// time: O(1)
 // space: O(1)
 
-func min(a, b int) int {
-    if a < b {
-        return a
+// stars and bars counting with 3 children (2 bars)
+func starsAndTwoBars(x int) int64 {
+    if x < 0 {
+        return 0
     }
 
-    return b
-}
-
-func max(a, b int) int {
-    if a > b {
-        return a
-    }
-
-    return b
+    return int64((x * (x-1)) / 2)
 }
