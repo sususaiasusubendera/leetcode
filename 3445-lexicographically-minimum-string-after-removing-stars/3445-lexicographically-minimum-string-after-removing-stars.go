@@ -1,28 +1,35 @@
 func clearStars(s string) string {
-	cnt := make([][]int, 26)
-	for i := range cnt {
-		cnt[i] = make([]int, 0)
-	}
-	arr := []rune(s)
-	for i, c := range arr {
-		if c != '*' {
-			cnt[c-'a'] = append(cnt[c-'a'], i)
-		} else {
-			for j := 0; j < 26; j++ {
-				if len(cnt[j]) > 0 {
-					last := len(cnt[j]) - 1
-					arr[cnt[j][last]] = '*'
-					cnt[j] = cnt[j][:last]
-					break
-				}
-			}
-		}
-	}
-	var ans []rune
-	for _, c := range arr {
-		if c != '*' {
-			ans = append(ans, c)
-		}
-	}
-	return string(ans)
+    freq := make([][]int, 26)
+    for i := 0; i < len(freq); i++ {
+        freq[i] = make([]int, 0)
+    }
+
+    sb := []byte(s)
+    for i := 0; i < len(sb); i++ {
+        if sb[i] != '*' {
+            freq[sb[i]-'a'] = append(freq[sb[i]-'a'], i)
+        } else {
+            for j := 0; j < len(freq); j++ {
+                if len(freq[j]) > 0 {
+                    last := len(freq[j]) - 1
+                    sb[freq[j][last]] = '*'
+                    freq[j] = freq[j][:last]
+                    break
+                }
+            }
+        }
+    }
+
+    result := []byte{}
+    for i := 0; i < len(sb); i++ {
+        if sb[i] != '*' {
+            result = append(result, sb[i])
+        }
+    }
+
+    return string(result)
 }
+
+// greedy
+// time: O(n)
+// space: O(n)
