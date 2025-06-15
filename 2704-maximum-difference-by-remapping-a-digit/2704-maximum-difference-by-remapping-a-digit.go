@@ -45,6 +45,7 @@ func minMaxDifference(num int) int {
     return maxNum - minNum
 }
 
+// greedy
 // time: O(n)
 // space: O(n)
 
