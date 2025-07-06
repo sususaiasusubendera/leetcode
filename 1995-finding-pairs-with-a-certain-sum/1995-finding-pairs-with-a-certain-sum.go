@@ -37,6 +37,11 @@ func (this *FindSumPairs) Count(tot int) int {
     return result
 }
 
+// time
+// - Constructor: O(n2)
+// - Add: O(1)
+// - Count: O(n1)
+// space: O(n1 + n2)
 
 /**
  * Your FindSumPairs object will be instantiated and called as such:
