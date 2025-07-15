@@ -3,32 +3,30 @@ func isValid(word string) bool {
         return false
     }
 
-    var vowExist,consExist bool
-
-    for _,l := range word {
-        if (l > 47 && l < 58) || (l > 64 && l < 91) || (l > 96 && l < 123) {
-            if vowelMap[l]{
-                vowExist = true
-            }else if l > 58 {
-                consExist = true
+    hasVow, hasCon := false, false
+    for _, char := range word {
+        if unicode.IsLetter(char) {
+            c := unicode.ToLower(char)
+            if vowels[c] {
+                hasVow = true
+            } else {
+                hasCon = true
             }
-        }else{
+        } else if !unicode.IsDigit(char) {
             return false
         }
     }
-    return vowExist && consExist
+
+    return hasVow && hasCon
 }
 
+// time: O(n)
+// space: O(1)
 
-var vowelMap = map[rune]bool{
-    'i' : true,
+var vowels = map[rune]bool{
+    'a': true,
+    'e': true,
+    'i': true,
     'o': true,
-    'a' : true,
-    'e' : true,
-    'u' : true,
-  'I' : true,
-    'O': true,
-    'A' : true,
-    'E' : true,
-    'U' : true,
+    'u': true,
 }
