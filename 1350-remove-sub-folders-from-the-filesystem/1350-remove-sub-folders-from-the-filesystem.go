@@ -1,27 +1,33 @@
 func removeSubfolders(folders []string) []string {
-    folderSet := make(map[string]any, len(folders))
+    m := make(map[string]interface{}, len(folders))
     for _, folder := range folders {
-        folderSet[folder] = nil
+        m[folder] = nil
     }
 
-    res := make([]string, 0, len(folders))
+    result := make([]string, 0, len(folders))
     for _, folder := range folders {
         isSub := false
         for i := range folder[:len(folder)-1] {
             if folder[i] != '/' {
                 continue
             }
-            if _, ok := folderSet[folder[:i]]; ok {
+
+            if _, exists := m[folder[:i]]; exists {
                 isSub = true
                 break
             }
         }
+
         if isSub {
             continue
         }
-        res = append(res, folder)
+
+        result = append(result, folder)
     }
-    return res
+
+    return result
 }
 
-// notice me senpai!
+// string, map
+// time: O(nL)
+// space: O(n)
