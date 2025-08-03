@@ -1,14 +1,12 @@
 func minCost(basket1 []int, basket2 []int) int64 {
 	freq := map[int]int{}
     minCost := int(1e9) // from constraints 1 <= basket1[i], basket2[i] <= 10^9
-
     for _, cost := range basket1 {
         freq[cost]++
         if cost < minCost {
             minCost = cost
         }
     }
-
     for _, cost := range basket2 {
         freq[cost]--
         if cost < minCost {
@@ -41,6 +39,7 @@ func minCost(basket1 []int, basket2 []int) int64 {
     return int64(result)
 }
 
+// hash map, greedy, sort
 // time: O(Nlog(n))
 // space: O(N)
 
