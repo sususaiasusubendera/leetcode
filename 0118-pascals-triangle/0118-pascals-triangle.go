@@ -1,17 +1,24 @@
 func generate(numRows int) [][]int {
-    result := [][]int{{1}}
-    if numRows == 1 {
-        return result
-    }
-    result = append(result, []int{1, 1})
-    
-    for i := 1; i < numRows-1; i++ {
+	result := make([][]int, numRows)
+	result[0] = []int{1}
+
+	if numRows == 1 {
+		return result
+	}
+
+	result[1] = []int{1, 1}
+	for i := 2; i < numRows; i++ {
         row := []int{1}
-        for j := 0; j < len(result[i])-1; j++ {
-            row = append(row, result[i][j]+result[i][j+1])
+        for j := 1; j < i; j++ {
+            row = append(row, result[i-1][j-1]+result[i-1][j])
         }
         row = append(row, 1)
-        result = append(result, row)
-    }
+
+        result[i] = row  
+	}
+
     return result
 }
+
+// time: O(n^2)
+// space: O(n^2)
