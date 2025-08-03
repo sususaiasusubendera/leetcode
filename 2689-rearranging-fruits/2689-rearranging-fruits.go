@@ -41,6 +41,9 @@ func minCost(basket1 []int, basket2 []int) int64 {
     return int64(result)
 }
 
+// time: O(Nlog(n))
+// space: O(N)
+
 func abs(n int) int {
     if n < 0 {
         return -n
