@@ -1,5 +1,5 @@
 func minCost(basket1 []int, basket2 []int) int64 {
-	freq := map[int]int{}
+    freq := map[int]int{}
     minCost := int(1e9) // from constraints 1 <= basket1[i], basket2[i] <= 10^9
     for _, cost := range basket1 {
         freq[cost]++
