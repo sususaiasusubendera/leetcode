@@ -454,6 +454,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/sususaiasusubendera/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0412-fizz-buzz](https://github.com/sususaiasusubendera/leetcode/tree/master/0412-fizz-buzz) |
 | [0797-rabbits-in-forest](https://github.com/sususaiasusubendera/leetcode/tree/master/0797-rabbits-in-forest) |
+| [0826-soup-servings](https://github.com/sususaiasusubendera/leetcode/tree/master/0826-soup-servings) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/sususaiasusubendera/leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/sususaiasusubendera/leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1477-product-of-the-last-k-numbers](https://github.com/sususaiasusubendera/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
@@ -500,6 +501,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0392-is-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0392-is-subsequence) |
 | [0416-partition-equal-subset-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0806-domino-and-tromino-tiling](https://github.com/sususaiasusubendera/leetcode/tree/master/0806-domino-and-tromino-tiling) |
+| [0826-soup-servings](https://github.com/sususaiasusubendera/leetcode/tree/master/0826-soup-servings) |
 | [0868-push-dominoes](https://github.com/sususaiasusubendera/leetcode/tree/master/0868-push-dominoes) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/sususaiasusubendera/leetcode/tree/master/0934-bitwise-ors-of-subarrays) |
@@ -1075,4 +1077,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/sususaiasusubendera/leetcode/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2028-the-earliest-and-latest-rounds-where-players-compete](https://github.com/sususaiasusubendera/leetcode/tree/master/2028-the-earliest-and-latest-rounds-where-players-compete) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/sususaiasusubendera/leetcode/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
+## Probability and Statistics
+|  |
+| ------- |
+| [0826-soup-servings](https://github.com/sususaiasusubendera/leetcode/tree/master/0826-soup-servings) |
 <!---LeetCode Topics End-->
