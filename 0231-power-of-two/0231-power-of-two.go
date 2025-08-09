@@ -1,18 +1,6 @@
 func isPowerOfTwo(n int) bool {
-    if n <= 0 {
-        return false
-    }
-
-    if n == 1 {
-        return true
-    }
-
-    if n%2 != 0 {
-        return false
-    }
-
-    return isPowerOfTwo(n / 2)
+    return 0 < n && n & (n-1) == 0
 }
 
-// time: O(log n)
-// space: O(log n)
+// time: O(1)
+// space: O(1)
