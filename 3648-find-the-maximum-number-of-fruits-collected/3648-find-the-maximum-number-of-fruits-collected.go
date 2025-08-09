@@ -41,6 +41,6 @@ func maxCollectedFruits(fruits [][]int) int {
 	return ans
 }
 
-// editorial
 // dp
-// NOTICE ME SENPAI!!!
+// editorial
+// NORICE ME SENPAI!!!
