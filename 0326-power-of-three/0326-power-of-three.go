@@ -1,17 +1,9 @@
 func isPowerOfThree(n int) bool {
-    if n <= 0 {
-        return false
-    }
-    if n == 1 {
-        return true
-    }
-    if n%3 != 0 {
-        return false
-    }
-
-    return isPowerOfThree(n/3)
+    // k = n^3
+    maxK := 1162261467 // max k <= (2^31)-1
+    return n > 0 && maxK % n == 0
 }
 
-// time: O(log(n))
-// space: O(log(n))
-
+// math
+// time: O(1)
+// space: O(1)
