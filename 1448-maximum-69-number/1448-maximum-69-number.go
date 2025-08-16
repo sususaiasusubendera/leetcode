@@ -1,21 +1,25 @@
 func maximum69Number (num int) int {
-    strNum := strconv.Itoa(num)
-    strResNum := []byte{}
-    change := false
-    for i := 0; i < len(strNum); i++ {
-        if strNum[i] == '6' && !change {
-            strResNum = append(strResNum, '9')
-            change = true
-            continue
-        }
-
-        strResNum = append(strResNum, strNum[i])
+    div := 1
+    for div <= num/10 {
+        div *= 10
     }
 
-    resNum, _ := strconv.Atoi(string(strResNum))
-    return resNum
+    res := 0
+    change := false
+    for div > 0 {
+        d := num / div
+        if d == 6 && !change {
+            d = 9
+            change = true
+        }
+        num %= div
+        res += d * div
+        div /= 10
+    }
+
+    return res
 }
 
-// greedy
-// time: O(n)
-// space: O(n)
+// greedy, integer
+// time: O(log(n))
+// space: O(1)
