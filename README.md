@@ -124,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0594-longest-harmonious-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0594-longest-harmonious-subsequence) |
 | [0605-can-place-flowers](https://github.com/sususaiasusubendera/leetcode/tree/master/0605-can-place-flowers) |
+| [0679-24-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0679-24-game) |
 | [0682-baseball-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0682-baseball-game) |
 | [0797-rabbits-in-forest](https://github.com/sususaiasusubendera/leetcode/tree/master/0797-rabbits-in-forest) |
 | [0854-making-a-large-island](https://github.com/sususaiasusubendera/leetcode/tree/master/0854-making-a-large-island) |
@@ -461,6 +462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/sususaiasusubendera/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0380-insert-delete-getrandom-o1](https://github.com/sususaiasusubendera/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0412-fizz-buzz](https://github.com/sususaiasusubendera/leetcode/tree/master/0412-fizz-buzz) |
+| [0679-24-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0679-24-game) |
 | [0797-rabbits-in-forest](https://github.com/sususaiasusubendera/leetcode/tree/master/0797-rabbits-in-forest) |
 | [0826-soup-servings](https://github.com/sususaiasusubendera/leetcode/tree/master/0826-soup-servings) |
 | [0867-new-21-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0867-new-21-game) |
@@ -1027,6 +1029,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0679-24-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0679-24-game) |
 | [1160-letter-tile-possibilities](https://github.com/sususaiasusubendera/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/sususaiasusubendera/leetcode/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/sususaiasusubendera/leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
