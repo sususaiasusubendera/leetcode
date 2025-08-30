@@ -28,3 +28,8 @@ func isValidSudoku(board [][]byte) bool {
     }
     return true
 }
+
+// array, matrix, hash map
+// time: O(n^2)
+// space: O(n^2)
+
