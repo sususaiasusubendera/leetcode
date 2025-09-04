@@ -136,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0940-fruit-into-baskets](https://github.com/sususaiasusubendera/leetcode/tree/master/0940-fruit-into-baskets) |
 | [0945-snakes-and-ladders](https://github.com/sususaiasusubendera/leetcode/tree/master/0945-snakes-and-ladders) |
 | [0952-word-subsets](https://github.com/sususaiasusubendera/leetcode/tree/master/0952-word-subsets) |
+| [1039-find-the-town-judge](https://github.com/sususaiasusubendera/leetcode/tree/master/1039-find-the-town-judge) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/sususaiasusubendera/leetcode/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/sususaiasusubendera/leetcode/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1293-three-consecutive-odds](https://github.com/sususaiasusubendera/leetcode/tree/master/1293-three-consecutive-odds) |
@@ -339,6 +340,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sususaiasusubendera/leetcode/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0940-fruit-into-baskets](https://github.com/sususaiasusubendera/leetcode/tree/master/0940-fruit-into-baskets) |
 | [0952-word-subsets](https://github.com/sususaiasusubendera/leetcode/tree/master/0952-word-subsets) |
+| [1039-find-the-town-judge](https://github.com/sususaiasusubendera/leetcode/tree/master/1039-find-the-town-judge) |
 | [1160-letter-tile-possibilities](https://github.com/sususaiasusubendera/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sususaiasusubendera/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/sususaiasusubendera/leetcode/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -1007,6 +1009,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0684-redundant-connection](https://github.com/sususaiasusubendera/leetcode/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/sususaiasusubendera/leetcode/tree/master/0820-find-eventual-safe-states) |
+| [1039-find-the-town-judge](https://github.com/sususaiasusubendera/leetcode/tree/master/1039-find-the-town-judge) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/sususaiasusubendera/leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sususaiasusubendera/leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1558-course-schedule-iv](https://github.com/sususaiasusubendera/leetcode/tree/master/1558-course-schedule-iv) |
