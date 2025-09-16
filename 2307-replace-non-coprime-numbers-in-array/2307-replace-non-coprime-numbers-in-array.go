@@ -18,7 +18,7 @@ func replaceNonCoprimes(nums []int) []int {
 // time: O(n log(M))
 // space: O(n)
 
-func GCD(a, b int) int {
+func GCD(a, b int) int { // using euclidean algorithm
     for b != 0 {
         a, b = b, a%b
     }
