@@ -1,206 +1,137 @@
-import (
-    "fmt"
-    "sort"
-)
-
 type Entry struct {
-    Price int
-    Shop  int
-}
-
-type RentedEntry struct {
-    Price int
-    Shop  int
-    Movie int
+	shop  int
+	movie int
+	price int
 }
 
 type MovieRentingSystem struct {
-    // movie -> sorted slice of entries {price, shop}
-    unrentedMovies map[int][]Entry
-    
-    // sorted slice of rented entries {price, shop, movie}
-    rentedMovies   []RentedEntry
-    
-    // price lookup: "shop,movie" -> price
-    prices         map[string]int
+	availMovieMap map[int]*AvailableHeap // movie -> AvailableHeap
+	priceMap      map[[2]int]int         // shop, movie -> price
+	rented        *RentedHeap
+	rentedMap     map[[2]int]struct{} // shop, movie -> struct{} (lazy delete)
 }
 
-/**
- * Initialize movie rental system
- * TC: O(E log E), SC: O(E)
- */
 func Constructor(n int, entries [][]int) MovieRentingSystem {
-    system := MovieRentingSystem{
-        unrentedMovies: make(map[int][]Entry),
-        rentedMovies:   make([]RentedEntry, 0),
-        prices:         make(map[string]int),
-    }
-    
-    // Group entries by movie
-    for _, entry := range entries {
-        shop, movie, price := entry[0], entry[1], entry[2]
-        
-        system.unrentedMovies[movie] = append(
-            system.unrentedMovies[movie],
-            Entry{Price: price, Shop: shop},
-        )
-        
-        system.prices[fmt.Sprintf("%d,%d", shop, movie)] = price
-    }
-    
-    // Sort each movie's entries
-    for movie := range system.unrentedMovies {
-        sort.Slice(system.unrentedMovies[movie], func(i, j int) bool {
-            entries := system.unrentedMovies[movie]
-            if entries[i].Price != entries[j].Price {
-                return entries[i].Price < entries[j].Price
-            }
-            return entries[i].Shop < entries[j].Shop
-        })
-    }
-    
-    return system
+	mrs := MovieRentingSystem{
+		availMovieMap: make(map[int]*AvailableHeap),
+		priceMap:      make(map[[2]int]int),
+		rented:        &RentedHeap{},
+		rentedMap:     make(map[[2]int]struct{}),
+	}
+
+	for _, entry := range entries {
+		shop, movie, price := entry[0], entry[1], entry[2]
+		newEntry := Entry{
+			shop:  shop,
+			movie: movie,
+			price: price,
+		}
+
+		mrs.priceMap[[2]int{shop, movie}] = price
+
+		if mrs.availMovieMap[movie] == nil {
+			mrs.availMovieMap[movie] = &AvailableHeap{}
+		}
+
+		heap.Push(mrs.availMovieMap[movie], newEntry)
+	}
+
+	return mrs
 }
 
-/**
- * Search cheapest 5 shops for movie
- * TC: O(1), SC: O(1)
- */
 func (this *MovieRentingSystem) Search(movie int) []int {
-    entries, exists := this.unrentedMovies[movie]
-    if !exists {
-        return []int{}
-    }
-    
-    result := make([]int, 0, 5)
-    for i, entry := range entries {
-        if i >= 5 {
-            break
-        }
-        result = append(result, entry.Shop)
-    }
-    
-    return result
+	h := this.availMovieMap[movie]
+	res := []int{}
+	if h == nil || h.Len() == 0 {
+		return res
+	}
+
+	temp := []Entry{}
+	seenShop := make(map[int]struct{}) // prevent duplicate (shop, movie)
+	for len(res) < 5 && h.Len() > 0 {
+		top := heap.Pop(h).(Entry)
+		pair := [2]int{top.shop, top.movie}
+
+        // lazy delete if it is rented (unavailable)
+		if _, rented := this.rentedMap[pair]; rented { continue }
+       
+        // lazy delete if it appears in the results
+		if _, seen := seenShop[top.shop]; seen { continue }
+
+		res = append(res, top.shop)
+		seenShop[top.shop] = struct{}{}
+		temp = append(temp, top)
+	}
+
+	// push back all valid entries
+	for _, e := range temp {
+		heap.Push(h, e)
+	}
+
+	return res
 }
 
-/**
- * Rent movie from shop
- * TC: O(log n), SC: O(1)
- */
 func (this *MovieRentingSystem) Rent(shop int, movie int) {
-    priceKey := fmt.Sprintf("%d,%d", shop, movie)
-    price := this.prices[priceKey]
-    
-    // Remove from unrented (binary search + removal)
-    entries := this.unrentedMovies[movie]
-    target := Entry{Price: price, Shop: shop}
-    
-    index := sort.Search(len(entries), func(i int) bool {
-        if entries[i].Price != target.Price {
-            return entries[i].Price >= target.Price
-        }
-        return entries[i].Shop >= target.Shop
-    })
-    
-    if index < len(entries) && entries[index].Price == price && entries[index].Shop == shop {
-        // Remove the entry
-        this.unrentedMovies[movie] = append(entries[:index], entries[index+1:]...)
-    }
-    
-    // Add to rented (maintain sorted order)
-    rentedEntry := RentedEntry{Price: price, Shop: shop, Movie: movie}
-    this.insertSortedRented(rentedEntry)
+	price := this.priceMap[[2]int{shop, movie}]
+	entry := Entry{shop: shop, movie: movie, price: price}
+
+	this.rentedMap[[2]int{shop, movie}] = struct{}{}
+	heap.Push(this.rented, entry)
 }
 
-/**
- * Drop rented movie back to shop
- * TC: O(log n), SC: O(1)
- */
 func (this *MovieRentingSystem) Drop(shop int, movie int) {
-    priceKey := fmt.Sprintf("%d,%d", shop, movie)
-    price := this.prices[priceKey]
-    
-    // Remove from rented
-    target := RentedEntry{Price: price, Shop: shop, Movie: movie}
-    index := this.findRentedIndex(target)
-    if index >= 0 {
-        this.rentedMovies = append(this.rentedMovies[:index], this.rentedMovies[index+1:]...)
-    }
-    
-    // Add back to unrented
-    entry := Entry{Price: price, Shop: shop}
-    this.insertSortedUnrented(movie, entry)
+	price := this.priceMap[[2]int{shop, movie}]
+	entry := Entry{shop: shop, movie: movie, price: price}
+
+	delete(this.rentedMap, [2]int{shop, movie})
+	heap.Push(this.availMovieMap[movie], entry)
 }
 
-/**
- * Report 5 cheapest rented movies
- * TC: O(1), SC: O(1)
- */
 func (this *MovieRentingSystem) Report() [][]int {
-    result := make([][]int, 0, 5)
-    
-    for i, entry := range this.rentedMovies {
-        if i >= 5 {
-            break
-        }
-        result = append(result, []int{entry.Shop, entry.Movie})
-    }
-    
-    return result
+	h := this.rented
+	res := [][]int{}
+	if h == nil || h.Len() == 0 {
+		return res
+	}
+
+	temp := []Entry{}
+	seen := make(map[[2]int]struct{}) // prevent duplicate (shop, movie)
+	for len(res) < 5 && h.Len() > 0 {
+		top := heap.Pop(h).(Entry)
+		pair := [2]int{top.shop, top.movie}
+
+        // lazy delete if it isn't rented
+		if _, rented := this.rentedMap[pair]; !rented { continue }
+
+        // lazy delete if it appears in the results
+		if _, ok := seen[pair]; ok { continue }
+
+		r := []int{top.shop, top.movie}
+		res = append(res, r)
+		seen[pair] = struct{}{}
+		temp = append(temp, top)
+	}
+
+	// push back all valid entries
+	for _, e := range temp {
+		heap.Push(h, e)
+	}
+
+	return res
 }
 
-/**
- * Helper: Insert rented entry maintaining sorted order
- */
-func (this *MovieRentingSystem) insertSortedRented(entry RentedEntry) {
-    index := sort.Search(len(this.rentedMovies), func(i int) bool {
-        current := this.rentedMovies[i]
-        if current.Price != entry.Price {
-            return current.Price >= entry.Price
-        }
-        if current.Shop != entry.Shop {
-            return current.Shop >= entry.Shop
-        }
-        return current.Movie >= entry.Movie
-    })
-    
-    // Insert at the found position
-    this.rentedMovies = append(this.rentedMovies, RentedEntry{})
-    copy(this.rentedMovies[index+1:], this.rentedMovies[index:])
-    this.rentedMovies[index] = entry
-}
-
-/**
- * Helper: Insert unrented entry maintaining sorted order
- */
-func (this *MovieRentingSystem) insertSortedUnrented(movie int, entry Entry) {
-    entries := this.unrentedMovies[movie]
-    
-    index := sort.Search(len(entries), func(i int) bool {
-        if entries[i].Price != entry.Price {
-            return entries[i].Price >= entry.Price
-        }
-        return entries[i].Shop >= entry.Shop
-    })
-    
-    // Insert at the found position
-    entries = append(entries, Entry{})
-    copy(entries[index+1:], entries[index:])
-    entries[index] = entry
-    this.unrentedMovies[movie] = entries
-}
-
-/**
- * Helper: Find index of rented entry
- */
-func (this *MovieRentingSystem) findRentedIndex(target RentedEntry) int {
-    for i, entry := range this.rentedMovies {
-        if entry.Price == target.Price && entry.Shop == target.Shop && entry.Movie == target.Movie {
-            return i
-        }
-    }
-    return -1
-}
+// array, design, hash map, heap
+// time:
+// - Constructor: O(nlog(n))
+// - Search: amortized O(log(n))
+// - Rent: O(log(n))
+// - Drop: O(lof(n))
+// - Report: amortized O(log(n))
+// space:
+// - Constructor: O(n)
+// - Search: amortized O(n)
+// - Rent: O(1)
+// - Report: amortized O(n)
 
 /**
  * Your MovieRentingSystem object will be instantiated and called as such:
@@ -210,3 +141,59 @@ func (this *MovieRentingSystem) findRentedIndex(target RentedEntry) int {
  * obj.Drop(shop,movie);
  * param_4 := obj.Report();
  */
+
+// AvailableHeap implementation
+type AvailableHeap []Entry
+
+func (h *AvailableHeap) Len() int { return len(*h) }
+
+func (h *AvailableHeap) Swap(i, j int) { (*h)[i], (*h)[j] = (*h)[j], (*h)[i] }
+
+func (h *AvailableHeap) Less(i, j int) bool {
+	if (*h)[i].price == (*h)[j].price {
+		return (*h)[i].shop < (*h)[j].shop
+	}
+
+	return (*h)[i].price < (*h)[j].price
+}
+
+func (h *AvailableHeap) Push(x any) { *h = append(*h, x.(Entry)) }
+
+func (h *AvailableHeap) Pop() any {
+	old := *h
+	n := len(old)
+	x := old[n-1]
+	*h = old[:n-1]
+
+	return x
+}
+
+// RentedHeap implementation
+type RentedHeap []Entry
+
+func (h *RentedHeap) Len() int { return len(*h) }
+
+func (h *RentedHeap) Swap(i, j int) { (*h)[i], (*h)[j] = (*h)[j], (*h)[i] }
+
+func (h *RentedHeap) Less(i, j int) bool {
+	if (*h)[i].price == (*h)[j].price && (*h)[i].shop == (*h)[j].shop {
+		return (*h)[i].movie < (*h)[j].movie
+	}
+
+	if (*h)[i].price == (*h)[j].price {
+		return (*h)[i].shop < (*h)[j].shop
+	}
+
+	return (*h)[i].price < (*h)[j].price
+}
+
+func (h *RentedHeap) Push(x any) { *h = append(*h, x.(Entry)) }
+
+func (h *RentedHeap) Pop() any {
+	old := *h
+	n := len(old)
+	x := old[n-1]
+	*h = old[:n-1]
+
+	return x
+}
