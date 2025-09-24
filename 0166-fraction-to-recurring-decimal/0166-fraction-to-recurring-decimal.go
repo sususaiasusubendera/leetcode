@@ -14,13 +14,15 @@ func fractionToDecimal(numerator int, denominator int) string {
     integer := numerator / denominator
     ans += strconv.Itoa(integer)
 
-    // remainder part
+    // decimal part
     remainder := numerator % denominator
     if remainder == 0 { return ans }
 
     ans += "."
 
-    posMap := map[int]int{}
+    // not all repeating patterns start immediately after the decimal point
+    // so we need to store the index position
+    posMap := map[int]int{} // remainder -> idx pos
     decimalPart := ""
     for remainder != 0 {
         if idx, ok := posMap[remainder]; ok {
@@ -39,4 +41,6 @@ func fractionToDecimal(numerator int, denominator int) string {
     return ans + decimalPart
 }
 
-// temp
+// hash map, math, string
+// time: O(n)
+// space: O(n)
