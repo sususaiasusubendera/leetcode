@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/sususaiasusubendera/leetcode/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/sususaiasusubendera/leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0165-compare-version-numbers](https://github.com/sususaiasusubendera/leetcode/tree/master/0165-compare-version-numbers) |
+| [0166-fraction-to-recurring-decimal](https://github.com/sususaiasusubendera/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0205-isomorphic-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/0205-isomorphic-strings) |
 | [0224-basic-calculator](https://github.com/sususaiasusubendera/leetcode/tree/master/0224-basic-calculator) |
 | [0242-valid-anagram](https://github.com/sususaiasusubendera/leetcode/tree/master/0242-valid-anagram) |
@@ -343,6 +344,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/sususaiasusubendera/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0141-linked-list-cycle](https://github.com/sususaiasusubendera/leetcode/tree/master/0141-linked-list-cycle) |
+| [0166-fraction-to-recurring-decimal](https://github.com/sususaiasusubendera/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0169-majority-element](https://github.com/sususaiasusubendera/leetcode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/sususaiasusubendera/leetcode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/0205-isomorphic-strings) |
@@ -505,6 +507,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/sususaiasusubendera/leetcode/tree/master/0050-powx-n) |
 | [0066-plus-one](https://github.com/sususaiasusubendera/leetcode/tree/master/0066-plus-one) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/sususaiasusubendera/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0166-fraction-to-recurring-decimal](https://github.com/sususaiasusubendera/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0189-rotate-array](https://github.com/sususaiasusubendera/leetcode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/sususaiasusubendera/leetcode/tree/master/0202-happy-number) |
 | [0224-basic-calculator](https://github.com/sususaiasusubendera/leetcode/tree/master/0224-basic-calculator) |
