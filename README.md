@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/sususaiasusubendera/leetcode/tree/master/0088-merge-sorted-array) |
 | [0118-pascals-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0118-pascals-triangle) |
+| [0120-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/sususaiasusubendera/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0128-longest-consecutive-sequence) |
@@ -572,6 +573,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0055-jump-game) |
 | [0118-pascals-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0118-pascals-triangle) |
+| [0120-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/sususaiasusubendera/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0300-longest-increasing-subsequence) |
