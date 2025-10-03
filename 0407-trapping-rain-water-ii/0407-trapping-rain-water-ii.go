@@ -1,15 +1,17 @@
 func trapRainWater(heightMap [][]int) int {
 	m, n := len(heightMap), len(heightMap[0])
+
+    // no water can be trapped in a heightMap smaller than 3x3
 	if m < 3 || n < 3 {
 		return 0
-	} // no water can be trapped in a heightMap smaller than 3x3
+	}
 
 	visited := make([][]bool, m)
 	for i := range visited {
 		visited[i] = make([]bool, n)
 	}
 
-	// add all outer layer cells of the heightMap to visited and heap
+	// add all outer layer cells of the heightMap to heap, mark visited
 	h := &MinHeap{}
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
