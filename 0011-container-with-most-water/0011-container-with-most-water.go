@@ -1,24 +1,21 @@
 func maxArea(height []int) int {
-    x1 := 0
-    x2 := len(height)-1
-
-    ma := 0
-    for x1 <= x2 {
-        a := 0
-        if height[x1] >= height[x2] {
-            a = height[x2] * (x2 - x1)
-            if a > ma {
-                ma = a
-            }
-            x2--
-        } else {
-            a = height[x1] * (x2 - x1)
-            if a > ma {
-                ma = a
-            }
-            x1++
+    left, right := 0, len(height)-1
+    max := 0
+    for left < right {
+        if height[left] <= height[right] {
+            area := height[left] * (right-left)
+            if area > max { max = area }
+            left++
+        } else { // height[left] > height[right]
+            area := height[right] * (right-left)
+            if area > max { max = area }
+            right--
         }
     }
 
-    return ma
+    return max
 }
+
+// array, greedy, two pointers
+// time: O(n)
+// space: O(1)
