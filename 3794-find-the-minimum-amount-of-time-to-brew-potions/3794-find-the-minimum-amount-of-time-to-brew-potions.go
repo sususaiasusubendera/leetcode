@@ -6,7 +6,7 @@ func minTime(skill []int, mana []int) int64 {
 		for i := 0; i < n; i++ {
 			if currTime < wizardTime[i] {
 				currTime = wizardTime[i]
-			}
+			} 
 
 			currTime += skill[i] * mana[j]
 		}
