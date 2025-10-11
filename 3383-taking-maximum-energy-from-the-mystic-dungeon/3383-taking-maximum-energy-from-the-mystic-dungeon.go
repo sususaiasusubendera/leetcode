@@ -12,7 +12,8 @@ func maximumEnergy(energy []int, k int) int {
     return ans
 }
 
-// notice me senpai
+// time: O(n)
+// space: O(1)
 
 func max(a, b int) int {
     if a > b { return a }
