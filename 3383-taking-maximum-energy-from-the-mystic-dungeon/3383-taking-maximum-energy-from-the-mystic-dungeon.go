@@ -1,19 +1,23 @@
 func maximumEnergy(energy []int, k int) int {
     n := len(energy)
     ans := -1 << 31 // very small number (-1 * 2^(31))
-    for i := n - k; i < n; i++ {
-        sum := 0
-        for j := i; j >= 0; j -= k {
-            sum += energy[j]
-            ans = max(ans, sum)
+    dp := make([]int, n)
+    for i := n - 1; i >= 0; i-- {
+        if i >= n - k {
+            dp[i] = energy[i]
+        } else {
+            dp[i] = energy[i] + dp[i + k]
         }
+
+        ans = max(ans, dp[i])
     }
 
     return ans
 }
 
+// dp (bot-up)
 // time: O(n)
-// space: O(1)
+// space: O(n)
 
 func max(a, b int) int {
     if a > b { return a }
