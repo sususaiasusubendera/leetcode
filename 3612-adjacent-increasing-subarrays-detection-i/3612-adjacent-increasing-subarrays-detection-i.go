@@ -30,8 +30,8 @@ func hasIncreasingSubarrays(nums []int, k int) bool {
 	for i := 1; i < len(keys); i++ {
 		leftA, rightA := keys[i-1], leftRight[keys[i-1]]
 		leftB, rightB := keys[i], leftRight[keys[i]]
-		// check if subarray a & b are adjacent and they both have length >= k
-		if rightA == leftB-1 && rightA-leftA+1 >= k && rightB-leftB+1 >= k {
+		// check if subarray a & b are adjacent (all the subarrays are guaranteed to have length >= k)
+		if rightA == leftB-1 {
 			return true
 		}
 
