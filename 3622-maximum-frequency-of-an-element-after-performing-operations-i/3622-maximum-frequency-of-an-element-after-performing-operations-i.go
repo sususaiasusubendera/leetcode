@@ -1,62 +1,72 @@
 func maxFrequency(nums []int, k int, numOperations int) int {
-	sort.Ints(nums)
-	ans := 0
-	numCount := make(map[int]int)
+	sort.Slice(nums, func(i, j int) bool { return nums[i] < nums[j] })
+	
+    ans := 0
+    left, right, idx := 0, 0, 0
 
-	lastNumIndex := 0
-	for i := 0; i < len(nums); i++ {
-		if nums[i] != nums[lastNumIndex] {
-			numCount[nums[lastNumIndex]] = i - lastNumIndex
-			ans = max(ans, i-lastNumIndex)
-			lastNumIndex = i
-		}
-	}
+    // CASE 1: target is an existing number in nums
+    for idx < len(nums) {
+        // move 'left' until nums[left] >= nums[idx]-k
+        // all elements in [left, idx) can potentially become nums[idx]
+        for left < idx && nums[left] < nums[idx]-k {
+            left++
+        }
 
-	numCount[nums[lastNumIndex]] = len(nums) - lastNumIndex
-	ans = max(ans, len(nums)-lastNumIndex)
+        // count numbers equal to nums[idx]
+        countSame := 1
+        for idx+countSame < len(nums) && nums[idx] == nums[idx+countSame] {
+            countSame++
+        }
+        
+        // move 'right' until nums[right] > nums[idx]+k
+        // all elements in (idx, right) can potentially become nums[idx]
+        for right < len(nums) && nums[right] <= nums[idx]+k {
+            right++
+        }
 
-	leftBound := func(value int) int {
-		left, right := 0, len(nums)-1
-		for left < right {
-			mid := (left + right) / 2
-			if nums[mid] < value {
-				left = mid + 1
-			} else {
-				right = mid
-			}
-		}
-		return left
-	}
+        // elements within [left, right) are the window candidates
+        // total elements in window  = right - left
+        // total elements before idx = idx - left
+        // total elements after idx  = right - (idx + countSame)
+        // total elements that can be changed = total element before idx + total element after idx
+        //                                    = (idx - left) + (right - (idx + countSame))
+        //                                    = idx - left + right - idx - countSame
+        //                                    = right - left - countSame
+        // we can only perform numOperations changes
+        // frequency for this target = countSame + min(numOperations, right - left - countSame)
+        ans = max(ans, countSame + min(numOperations, right - left - countSame))
 
-	rightBound := func(value int) int {
-		left, right := 0, len(nums)-1
-		for left < right {
-			mid := (left + right + 1) / 2
-			if nums[mid] > value {
-				right = mid - 1
-			} else {
-				left = mid
-			}
-		}
-		return left
-	}
+        idx += countSame // skip over identical elements
+    }
 
-	for i := nums[0]; i <= nums[len(nums)-1]; i++ {
-		l := leftBound(i - k)
-		r := rightBound(i + k)
+    // CASE 2: target may be a new number (not in nums)
+    left = 0
+    for right := 0; right < len(nums); right++ {
+        // shrink window if nums[right] and nums[left] aren't overlapping
+        for left < right && nums[right] - nums[left] > k * 2 {
+            left++
+        }
 
-		tempAns := 0
-		if count, exists := numCount[i]; exists {
-			tempAns = min(r-l+1, count+numOperations)
-		} else {
-			tempAns = min(r-l+1, numOperations)
-		}
-		ans = max(ans, tempAns)
-	}
+        ans = max(ans, min(right - left + 1, numOperations))
+    }
 
-	return ans
+    return ans
 }
 
-// EDITORIAL
-// NOTICE ME SENPAI
-// sort + enumerate + bin search
+// greedy, sliding window, sorting
+// time: O(n log(n))
+// space: O(1)
+
+func max(a, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
+
+func min(a, b int) int {
+    if a < b {
+        return a
+    }
+    return b
+}
