@@ -46,7 +46,7 @@ func countUnguarded(m int, n int, guards [][]int, walls [][]int) int {
 
     // vertical check
     for j := 0; j < n; j++ {
-        // left to right
+        // top to bot
         seen := false
         for i := 0; i < m; i++ {
             if grid[i][j] == 1 { // wall
@@ -58,7 +58,7 @@ func countUnguarded(m int, n int, guards [][]int, walls [][]int) int {
 			}
         }
 
-        // right to left
+        // bot to top
         seen = false
         for i := m-1; i >= 0; i-- {
             if grid[i][j] == 1 { // wall
