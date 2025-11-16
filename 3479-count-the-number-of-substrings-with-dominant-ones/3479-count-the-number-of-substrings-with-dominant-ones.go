@@ -35,6 +35,10 @@ func numberOfSubstrings(s string) int {
 	return res
 }
 
+// prefix sum, sliding window, string
+// time: O(n^2)
+// space: O(n)
+
 func min(a, b int) int {
 	if a < b { return a }
 	return b
