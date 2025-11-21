@@ -1,34 +1,32 @@
 func countPalindromicSubsequence(s string) int {
-    // initialize an array with [-1, -1] (for position tracking [start, end])
-    order := make([][2]int, 26)   
-    for i := 0; i < len(order); i++ {
-        order[i] = [2]int{-1, -1}
+    letters := make([][2]int, 26) // store start idx and end idx of a letter
+    for i := range letters {
+        letters[i] = [2]int{-1, -1} // [2]int{ start idx, end idx }
     }
 
-    // traverse the s, locate 'start index' and 'end index' of s[i] if any
-    for i, c := range s {
-        idx := c - 'a'
-        if order[idx][0] != -1 {
-            order[idx][1] = i
-        } else {
-            order[idx][0] = i
-        }
+    for i := 0; i < len(s); i++ {
+        c := s[i] - 'a'
+        if letters[c][0] == -1 { letters[c][0] = i; continue }
+        letters[c][1] = i
     }
 
-    // count unique middle characters between start and end
-    count := 0
-    for _, pos := range order {
-        // check if any middle characters
-        if pos[1] - pos[0] > 1 { 
-            // hash set using struct{} is better (space) than bool, CMIIW
-            unique := make(map[rune]struct{}) 
-            for _, mid := range s[pos[0]+1 : pos[1]] {
-                // mark the unique character using struct{}{}
-                unique[mid] = struct{}{}
+    ans := 0
+    for _, letter := range letters {
+        start, end := letter[0], letter[1]
+        if start != -1 && end != -1 && end - start > 1 {
+            seen := map[byte]struct{}{}
+            for i := start+1; i <= end-1; i++ {
+                if _, exists := seen[s[i]]; !exists {
+                    seen[s[i]] = struct{}{}
+                    ans++
+                }
             }
-            count += len(unique)
         }
     }
 
-    return count
+    return ans
 }
+
+// hash map, string
+// time: O(n)
+// space: O(1)
