@@ -10,3 +10,7 @@ func smallestRepunitDivByK(k int) int {
 
     return -1
 }
+
+// math
+// time: O(k)
+// space: O(1)
