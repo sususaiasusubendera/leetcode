@@ -21,7 +21,7 @@ func minSubarray(nums []int, p int) int {
         // P[l] = (curr - need + p) % p; + p so that P[l] always positive [0..p)
         target := (curr - need + p) % p
         if idx, ok := m[target]; ok {
-            // i - idx = length of subarray[l..r+1]
+            // i - idx = length of subarray[idx..i]
             if i - idx < res { res = i - idx }
         }
 
