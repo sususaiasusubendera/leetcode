@@ -18,7 +18,7 @@ func countCollisions(directions string) int {
                         stack = stack[:len(stack)-1] // pop
                     }
                     stack = append(stack, 'S')
-                } else {
+                } else { // R
                     stack = append(stack, 'R')
                 }
             } else if stack[len(stack)-1] == 'S' {
@@ -27,7 +27,7 @@ func countCollisions(directions string) int {
                     stack = append(stack, 'S')
                 } else if d == 'R' {
                     stack = append(stack, 'R')
-                } else {
+                } else { //S
                     stack = append(stack, 'S')
                 }
             } else if stack[len(stack)-1] == 'L' {
