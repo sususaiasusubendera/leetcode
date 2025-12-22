@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0944-delete-columns-to-make-sorted](https://github.com/sususaiasusubendera/leetcode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0952-word-subsets](https://github.com/sususaiasusubendera/leetcode/tree/master/0952-word-subsets) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0955-delete-columns-to-make-sorted-ii) |
+| [0960-delete-columns-to-make-sorted-iii](https://github.com/sususaiasusubendera/leetcode/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1006-vowel-spellchecker](https://github.com/sususaiasusubendera/leetcode/tree/master/1006-vowel-spellchecker) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/sususaiasusubendera/leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/sususaiasusubendera/leetcode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
@@ -171,6 +172,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0945-snakes-and-ladders](https://github.com/sususaiasusubendera/leetcode/tree/master/0945-snakes-and-ladders) |
 | [0952-word-subsets](https://github.com/sususaiasusubendera/leetcode/tree/master/0952-word-subsets) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0955-delete-columns-to-make-sorted-ii) |
+| [0960-delete-columns-to-make-sorted-iii](https://github.com/sususaiasusubendera/leetcode/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1006-vowel-spellchecker](https://github.com/sususaiasusubendera/leetcode/tree/master/1006-vowel-spellchecker) |
 | [1018-largest-perimeter-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/1018-largest-perimeter-triangle) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/sususaiasusubendera/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
@@ -739,6 +741,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0868-push-dominoes](https://github.com/sususaiasusubendera/leetcode/tree/master/0868-push-dominoes) |
 | [0905-length-of-longest-fibonacci-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0905-length-of-longest-fibonacci-subsequence) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/sususaiasusubendera/leetcode/tree/master/0934-bitwise-ors-of-subarrays) |
+| [0960-delete-columns-to-make-sorted-iii](https://github.com/sususaiasusubendera/leetcode/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1111-minimum-score-triangulation-of-polygon](https://github.com/sususaiasusubendera/leetcode/tree/master/1111-minimum-score-triangulation-of-polygon) |
 | [1170-shortest-common-supersequence](https://github.com/sususaiasusubendera/leetcode/tree/master/1170-shortest-common-supersequence) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/sususaiasusubendera/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
