@@ -1,14 +1,19 @@
 func plusOne(digits []int) []int {
-    for i := len(digits)-1; i >= 0; i-- {
-        if digits[i] < 9 {
-            digits[i]++
-            return digits
-        } else {
-            digits[i] = 0
-        }
+    idx := len(digits)-1
+    for idx >= 0 && digits[idx] + 1 == 10 {
+        digits[idx] = 0
+        idx--
     }
 
-    result := make([]int, len(digits) + 1)
-    result[0] = 1
-    return result
+    if idx == -1 {
+        digits = append([]int{1}, digits...)
+    } else {
+        digits[idx]++
+    }
+
+    return digits
 }
+
+// array, math
+// time: O(n)
+// space: O(n)
