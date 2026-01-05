@@ -1,42 +1,36 @@
 func sumFourDivisors(nums []int) int {
-    res := 0
-    for _, n := range nums {
-        val := sumOne(n)
-        if val != -1 {
-            res += val
+    memo := map[int]int{}
+    ans := 0
+    for _, num := range nums {
+        if val, exists := memo[num]; exists {
+            ans += val
+            continue
         }
-    }
-    return res
-}
 
-func sumOne(n int) int {
-    p := int(math.Round(math.Cbrt(float64(n))))
-    if p*p*p == n && isPrime(p) {
-        return 1 + p + p*p + p*p*p
-    }
-
-    for i := 2; i*i <= n; i++ {
-        if n%i == 0 {
-            a, b := i, n/i
-            if a != b && isPrime(a) && isPrime(b) {
-                return 1 + a + b + n
+        countDiv := 0
+        divSum := 0
+        four := true
+        for i := 1; i <= num; i++ {
+            if num % i == 0 {
+                countDiv++
+                divSum += i
             }
-            return -1
+
+            if countDiv > 4 {
+                four = false
+                break
+            }
+        }
+
+        if four && countDiv == 4 {
+            ans += divSum
+            memo[num] = divSum
         }
     }
-    return -1
+
+    return ans
 }
 
-func isPrime(x int) bool {
-    if x < 2 {
-        return false
-    }
-    for i := 2; i*i <= x; i++ {
-        if x%i == 0 {
-            return false
-        }
-    }
-    return true
-}
-
-// NOTICE ME SENPAI!!!
+// array, math
+// time: O(nm)
+// space: O(n)
