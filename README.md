@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0392-is-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0392-is-subsequence) |
 | [0412-fizz-buzz](https://github.com/sususaiasusubendera/leetcode/tree/master/0412-fizz-buzz) |
 | [0474-ones-and-zeroes](https://github.com/sususaiasusubendera/leetcode/tree/master/0474-ones-and-zeroes) |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0756-pyramid-transition-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0756-pyramid-transition-matrix) |
 | [0768-partition-labels](https://github.com/sususaiasusubendera/leetcode/tree/master/0768-partition-labels) |
 | [0868-push-dominoes](https://github.com/sususaiasusubendera/leetcode/tree/master/0868-push-dominoes) |
@@ -759,6 +760,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0392-is-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0392-is-subsequence) |
 | [0416-partition-equal-subset-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0474-ones-and-zeroes](https://github.com/sususaiasusubendera/leetcode/tree/master/0474-ones-and-zeroes) |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0806-domino-and-tromino-tiling](https://github.com/sususaiasusubendera/leetcode/tree/master/0806-domino-and-tromino-tiling) |
 | [0826-soup-servings](https://github.com/sususaiasusubendera/leetcode/tree/master/0826-soup-servings) |
 | [0867-new-21-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0867-new-21-game) |
