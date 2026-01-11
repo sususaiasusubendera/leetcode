@@ -130,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0073-set-matrix-zeroes](https://github.com/sususaiasusubendera/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/sususaiasusubendera/leetcode/tree/master/0075-sort-colors) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
+| [0085-maximal-rectangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0085-maximal-rectangle) |
 | [0088-merge-sorted-array](https://github.com/sususaiasusubendera/leetcode/tree/master/0088-merge-sorted-array) |
 | [0118-pascals-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0120-triangle) |
@@ -751,6 +752,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/sususaiasusubendera/leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0055-jump-game) |
+| [0085-maximal-rectangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0085-maximal-rectangle) |
 | [0118-pascals-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/sususaiasusubendera/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -1070,6 +1072,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/sususaiasusubendera/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/sususaiasusubendera/leetcode/tree/master/0073-set-matrix-zeroes) |
+| [0085-maximal-rectangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0085-maximal-rectangle) |
 | [0407-trapping-rain-water-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/sususaiasusubendera/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0498-diagonal-traverse](https://github.com/sususaiasusubendera/leetcode/tree/master/0498-diagonal-traverse) |
@@ -1109,6 +1112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/sususaiasusubendera/leetcode/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/sususaiasusubendera/leetcode/tree/master/0042-trapping-rain-water) |
 | [0071-simplify-path](https://github.com/sususaiasusubendera/leetcode/tree/master/0071-simplify-path) |
+| [0085-maximal-rectangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0085-maximal-rectangle) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/sususaiasusubendera/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/sususaiasusubendera/leetcode/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/sususaiasusubendera/leetcode/tree/master/0224-basic-calculator) |
@@ -1354,6 +1358,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/sususaiasusubendera/leetcode/tree/master/0042-trapping-rain-water) |
+| [0085-maximal-rectangle](https://github.com/sususaiasusubendera/leetcode/tree/master/0085-maximal-rectangle) |
 | [1628-count-submatrices-with-all-ones](https://github.com/sususaiasusubendera/leetcode/tree/master/1628-count-submatrices-with-all-ones) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/sususaiasusubendera/leetcode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [3001-apply-operations-to-maximize-score](https://github.com/sususaiasusubendera/leetcode/tree/master/3001-apply-operations-to-maximize-score) |
