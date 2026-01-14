@@ -1,5 +1,5 @@
 func minimumDeleteSum(s1 string, s2 string) int {
-	n, m := len(s1), len(s2)
+    n, m := len(s1), len(s2)
 
 	dp := make([][]int, n+1)
     for i := range dp {
@@ -36,7 +36,7 @@ func minimumDeleteSum(s1 string, s2 string) int {
     return dp[0][0]
 }
 
-// dp, dp
+// dp
 // time: O(nm)
 // space: O(nm)
 
