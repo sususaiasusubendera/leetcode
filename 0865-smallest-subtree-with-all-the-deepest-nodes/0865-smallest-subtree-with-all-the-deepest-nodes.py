@@ -32,3 +32,7 @@ class Solution:
                 return None
         
         return solve(root)
+
+# binary tree, dfs, hash map, tree
+# time: O(n)
+# space: O(n)
