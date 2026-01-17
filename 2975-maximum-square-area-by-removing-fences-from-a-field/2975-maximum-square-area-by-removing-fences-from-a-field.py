@@ -24,3 +24,7 @@ class Solution:
         MOD = 1_000_000_007
 
         return (max_s * max_s) % MOD
+
+# array, hash map
+# time: O(h^2 + v^2)
+# space: O(h^2 + h + v)
