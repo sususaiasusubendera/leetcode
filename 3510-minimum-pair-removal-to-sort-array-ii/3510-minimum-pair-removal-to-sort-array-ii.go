@@ -1,125 +1,125 @@
 func minimumPairRemoval(nums []int) int {
-	pq := &PriorityQueue{}
-	heap.Init(pq)
+	countDecrease := 0
+	ops := 0
+	h := &MinHeap{}
 	merged := make([]bool, len(nums))
-	decreaseCount := 0
-	count := 0
-	head := &Node{value: int64(nums[0]), left: 0}
-	current := head
-
+	head := &Node{val: int64(nums[0]), left: 0}
+	curr := head
+    // translate the nums into doubly-linked list and push pairs into heap
 	for i := 1; i < len(nums); i++ {
-		newNode := &Node{value: int64(nums[i]), left: i}
-		current.next = newNode
-		newNode.prev = current
+		newNode := &Node{val: int64(nums[i]), left: i}
+		curr.next = newNode
+		newNode.prev = curr
 
-		heap.Push(pq, &Item{
-			first:  current,
+		heap.Push(h, &Pair{
+			first:  curr,
 			second: newNode,
-			cost:   current.value + newNode.value,
+			cost:   curr.val + newNode.val,
 		})
+
+        // count decreasing adjacent number
 		if nums[i-1] > nums[i] {
-			decreaseCount++
+			countDecrease++
 		}
 
-		current = newNode
+		curr = newNode
 	}
 
-	for decreaseCount > 0 {
-		item := heap.Pop(pq).(*Item)
-		first := item.first
-		second := item.second
-		cost := item.cost
+	for countDecrease > 0 {
+		pair := heap.Pop(h).(*Pair)
+		first := pair.first
+		second := pair.second
+		cost := pair.cost
 
-		if merged[first.left] || merged[second.left] || first.value+second.value != cost {
+		if merged[first.left] || merged[second.left] || first.val+second.val != cost {
 			continue
 		}
-		count++
-		if first.value > second.value {
-			decreaseCount--
+
+		ops++ // do the operation
+		if first.val > second.val {
+			countDecrease--
 		}
 
 		prevNode := first.prev
 		nextNode := second.next
-		first.next = nextNode
+		first.next = nextNode // remove second
 		if nextNode != nil {
 			nextNode.prev = first
 		}
 
+		// prevNode and first (first)
 		if prevNode != nil {
-			if prevNode.value > first.value && prevNode.value <= cost {
-				decreaseCount--
-			} else if prevNode.value <= first.value && prevNode.value > cost {
-				decreaseCount++
+			// before and after condition
+			if prevNode.val > first.val && prevNode.val <= cost {
+				countDecrease--
+			} else if prevNode.val <= first.val && prevNode.val > cost {
+				countDecrease++
 			}
-			heap.Push(pq, &Item{
+			heap.Push(h, &Pair{
 				first:  prevNode,
 				second: first,
-				cost:   prevNode.value + cost,
+				cost:   prevNode.val + cost,
 			})
 		}
 
+		// first (second) abd nextNode
 		if nextNode != nil {
-			if second.value > nextNode.value && cost <= nextNode.value {
-				decreaseCount--
-			} else if second.value <= nextNode.value && cost > nextNode.value {
-				decreaseCount++
+			// before and after condiition
+			if second.val > nextNode.val && cost <= nextNode.val {
+				countDecrease--
+			} else if second.val <= nextNode.val && cost > nextNode.val {
+				countDecrease++
 			}
-			heap.Push(pq, &Item{
+			heap.Push(h, &Pair{
 				first:  first,
 				second: nextNode,
-				cost:   cost + nextNode.value,
+				cost:   cost + nextNode.val,
 			})
 		}
 
-		first.value = cost
-		merged[second.left] = true
+        first.val = cost
+        merged[second.left] = true
 	}
 
-	return count
+    return ops
 }
+
+// array, doubly-linked list, heap, linked list, simulation
+// time: O(nlog(n))
+// space: O(n)
 
 type Node struct {
-	value int64
-	left  int
-	prev  *Node
-	next  *Node
+	val  int64
+	left int
+	prev *Node
+	next *Node
 }
 
-type Item struct {
+type Pair struct {
 	first  *Node
 	second *Node
 	cost   int64
-	index  int
 }
 
-type PriorityQueue []*Item
+type MinHeap []*Pair
 
-func (pq PriorityQueue) Len() int { return len(pq) }
-func (pq PriorityQueue) Less(i, j int) bool {
-	if pq[i].cost == pq[j].cost {
-		return pq[i].first.left < pq[j].first.left
+func (h MinHeap) Len() int { return len(h) }
+
+func (h MinHeap) Less(i, j int) bool {
+	if h[i].cost == h[j].cost {
+		return h[i].first.left < h[j].first.left
 	}
-	return pq[i].cost < pq[j].cost
-}
-func (pq PriorityQueue) Swap(i, j int) {
-	pq[i], pq[j] = pq[j], pq[i]
-	pq[i].index = i
-	pq[j].index = j
-}
-func (pq *PriorityQueue) Push(x interface{}) {
-	n := len(*pq)
-	item := x.(*Item)
-	item.index = n
-	*pq = append(*pq, item)
-}
-func (pq *PriorityQueue) Pop() interface{} {
-	old := *pq
-	n := len(old)
-	item := old[n-1]
-	item.index = -1
-	*pq = old[0 : n-1]
-	return item
+	return h[i].cost < h[j].cost
 }
 
-// NOTICE ME SENPAI!!!
-// editorial
+func (h MinHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }
+
+func (h *MinHeap) Push(x any) { *h = append(*h, x.(*Pair)) }
+
+func (h *MinHeap) Pop() any {
+	old := *h
+	n := len(old)
+	pair := old[n-1]
+	*h = old[:n-1]
+	return pair
+}
