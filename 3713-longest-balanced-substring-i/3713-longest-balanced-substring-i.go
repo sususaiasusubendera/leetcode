@@ -1,13 +1,13 @@
 func longestBalanced(s string) int {
 	ans := 0
 	for i := 0; i < len(s); i++ {
-		set := map[byte]int{}
+		freq := map[byte]int{}
 		for j := i; j < len(s); j++ {
-			set[s[j]]++
+			freq[s[j]]++
 
 			balance := true
-			currFreq := set[s[j]]
-			for _, v := range set {
+			currFreq := freq[s[j]]
+			for _, v := range freq {
 				if currFreq != v {
 					balance = false
 					break
