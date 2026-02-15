@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0038-count-and-say](https://github.com/sususaiasusubendera/leetcode/tree/master/0038-count-and-say) |
 | [0049-group-anagrams](https://github.com/sususaiasusubendera/leetcode/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/sususaiasusubendera/leetcode/tree/master/0058-length-of-last-word) |
+| [0067-add-binary](https://github.com/sususaiasusubendera/leetcode/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/sususaiasusubendera/leetcode/tree/master/0068-text-justification) |
 | [0071-simplify-path](https://github.com/sususaiasusubendera/leetcode/tree/master/0071-simplify-path) |
 | [0125-valid-palindrome](https://github.com/sususaiasusubendera/leetcode/tree/master/0125-valid-palindrome) |
@@ -708,6 +709,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/sususaiasusubendera/leetcode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/sususaiasusubendera/leetcode/tree/master/0050-powx-n) |
 | [0066-plus-one](https://github.com/sususaiasusubendera/leetcode/tree/master/0066-plus-one) |
+| [0067-add-binary](https://github.com/sususaiasusubendera/leetcode/tree/master/0067-add-binary) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/sususaiasusubendera/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0166-fraction-to-recurring-decimal](https://github.com/sususaiasusubendera/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0189-rotate-array](https://github.com/sususaiasusubendera/leetcode/tree/master/0189-rotate-array) |
@@ -1387,6 +1389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0054-spiral-matrix) |
+| [0067-add-binary](https://github.com/sususaiasusubendera/leetcode/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/sususaiasusubendera/leetcode/tree/master/0068-text-justification) |
 | [0412-fizz-buzz](https://github.com/sususaiasusubendera/leetcode/tree/master/0412-fizz-buzz) |
 | [0498-diagonal-traverse](https://github.com/sususaiasusubendera/leetcode/tree/master/0498-diagonal-traverse) |
@@ -1423,6 +1426,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/sususaiasusubendera/leetcode/tree/master/0067-add-binary) |
 | [0136-single-number](https://github.com/sususaiasusubendera/leetcode/tree/master/0136-single-number) |
 | [0222-count-complete-tree-nodes](https://github.com/sususaiasusubendera/leetcode/tree/master/0222-count-complete-tree-nodes) |
 | [0231-power-of-two](https://github.com/sususaiasusubendera/leetcode/tree/master/0231-power-of-two) |
