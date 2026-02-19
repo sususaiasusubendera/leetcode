@@ -26,5 +26,5 @@ func countBinarySubstrings(s string) int {
 }
 
 // string, two pointers
-// time: O(n)
+// time: O(n^2)
 // space: O(1)
