@@ -1,6 +1,11 @@
 class Solution:
     def hasAllCodes(self, s: str, k: int) -> bool:
-        return len({s[i-k:i] for i in range(k,len(s)+1)})==2**k
+        h = set()
+        for i in range(0, len(s) - k + 1):
+            h.add(s[i:i+k])
+        
+        return len(h) == 2 ** k
 
-# solution from solutions (MikPosp)
-# notice me senpai
+# bit manipulation, hash map, string
+# time: O(nk)
+# space: O(2^k)
