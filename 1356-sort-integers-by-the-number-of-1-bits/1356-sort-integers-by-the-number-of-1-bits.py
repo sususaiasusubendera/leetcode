@@ -1,6 +1,8 @@
 class Solution:
     def sortByBits(self, arr: List[int]) -> List[int]:
-        return sorted(arr, key= lambda a: (a.bit_count(), a))
+        # built-in func count set bits
+        return sorted(arr, key=lambda x: (x.bit_count(), x)) # asc (set bits x, x)
 
-# solution from solutions (sound_wave9)
-# notice me senpai!!
+# array, bit manipulation, sorting
+# time: O(nlog(n))
+# space: O(n)
