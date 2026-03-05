@@ -20,5 +20,5 @@ class Solution:
         return ops
 
 # bit manipulation, string, simulation
-# time: O(n)
+# time: O(n^2)
 # space: O(n)
