@@ -4,20 +4,23 @@ func minimumDistance(nums []int) int {
         return -1
     }
 
+    m := map[int][]int{}
 	x := int(10e10)
-    exists := false
-	for i := 0; i < n-2; i++ {
-		for j := i + 1; j < n-1; j++ {
-			for k := j + 1; k < n; k++ {
-				if nums[i] == nums[j] && nums[j] == nums[k] && nums[i] == nums[k] {
-					x = min(x, abs(i-j)+abs(j-k)+abs(k-i))
-                    exists = true
-				}
-			}
-		}
-	}
+    found := false
+	for i := 0; i < n; i++ {
+        if _, ok := m[nums[i]]; !ok {
+            m[nums[i]] = []int{i}
+        } else {
+            m[nums[i]] = append(m[nums[i]], i)
+            if nn := len(m[nums[i]]); nn >= 3 {
+                a, b, c := m[nums[i]][nn-3], m[nums[i]][nn-2], m[nums[i]][nn-1]
+                x = min(x, abs(a-b) + abs(b-c) + abs(a-c))
+                found = true
+            }
+        }
+    }
 
-	if exists {
+	if found {
         return x
     }
     return -1
@@ -30,6 +33,6 @@ func abs(n int) int {
 	return n
 }
 
-// array
-// time: O(n^3)
-// space: O(1)
+// array, hash map
+// time: O(n)
+// space: O(n)
