@@ -8,5 +8,6 @@ class Solution:
 
         return j - i - 1
 
-# solution from solutions (la_castille)
-# notice me senpai
+# array, two pointers
+# time: O(n)
+# space: O(1)
