@@ -3,5 +3,5 @@ class Solution:
         return abs(n - int(str(n)[::-1]))
 
 # math
-# time: log(n)
-# space: O(1)
+# time: O(d)
+# space: O(d)
