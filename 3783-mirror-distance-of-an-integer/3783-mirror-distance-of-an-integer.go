@@ -20,5 +20,5 @@ func abs(n int) int {
 }
 
 // math
-// time: log(n)
+// time: O(log(n))
 // space: O(1)
