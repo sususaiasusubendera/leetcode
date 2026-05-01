@@ -179,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0334-increasing-triplet-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0334-increasing-triplet-subsequence) |
 | [0368-largest-divisible-subset](https://github.com/sususaiasusubendera/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0380-insert-delete-getrandom-o1](https://github.com/sususaiasusubendera/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0396-rotate-function](https://github.com/sususaiasusubendera/leetcode/tree/master/0396-rotate-function) |
 | [0407-trapping-rain-water-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0416-partition-equal-subset-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/sususaiasusubendera/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
@@ -812,6 +813,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0342-power-of-four](https://github.com/sususaiasusubendera/leetcode/tree/master/0342-power-of-four) |
 | [0368-largest-divisible-subset](https://github.com/sususaiasusubendera/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0380-insert-delete-getrandom-o1](https://github.com/sususaiasusubendera/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0396-rotate-function](https://github.com/sususaiasusubendera/leetcode/tree/master/0396-rotate-function) |
 | [0412-fizz-buzz](https://github.com/sususaiasusubendera/leetcode/tree/master/0412-fizz-buzz) |
 | [0679-24-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0679-24-game) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/sususaiasusubendera/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
@@ -917,6 +919,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0368-largest-divisible-subset](https://github.com/sususaiasusubendera/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0392-is-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0392-is-subsequence) |
+| [0396-rotate-function](https://github.com/sususaiasusubendera/leetcode/tree/master/0396-rotate-function) |
 | [0416-partition-equal-subset-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0474-ones-and-zeroes](https://github.com/sususaiasusubendera/leetcode/tree/master/0474-ones-and-zeroes) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/sususaiasusubendera/leetcode/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
