@@ -12,3 +12,6 @@ func rotate(matrix [][]int)  {
         }
     }
 }
+
+// solved
+// notice me senpai (re-submit)
