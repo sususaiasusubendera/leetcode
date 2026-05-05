@@ -33,3 +33,6 @@ func rotateRight(head *ListNode, k int) *ListNode {
     
     return newHead
 }
+
+// solved
+// notice me senpai (re-submit) (?)
