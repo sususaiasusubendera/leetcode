@@ -8,22 +8,14 @@ func separateDigits(nums []int) []int {
 }
 
 func iterateDigit(n int, a []int) []int {
-	div := 1
-	for n/div >= 10 {
-		div *= 10
-	}
-
-	for div > 0 {
-        digit := n / div
-        a = append(a, digit)
-
-        n %= div
-        div /= 10
-	}
+    s := strconv.Itoa(n)
+    for i := 0; i < len(s); i++ {
+        a = append(a, int(s[i] - '0'))
+    }
 
     return a
 }
 
 // array
-// time: O(n)
-// space: O(d)
+// time: O(d)
+// space: O(k)
