@@ -25,5 +25,7 @@ func longestCommonPrefix(arr1 []int, arr2 []int) int {
 }
 
 // array, hash map
+// time: O(nlog(d) + mlog(d))
+// space: O(nlog(d))
 
 // #1 2026/05/21
