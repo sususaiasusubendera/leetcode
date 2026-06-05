@@ -1,42 +1,34 @@
 func earliestFinishTime(landStartTime []int, landDuration []int, waterStartTime []int, waterDuration []int) int {
-	landRidesEff := []LandRide{}
-	landRidesSortedStart := []LandRide{}
+	landRides := []LandRide{}
 	for i := 0; i < len(landStartTime); i++ {
-		landRidesEff = append(landRidesEff, LandRide{landStartTime[i], landDuration[i], landStartTime[i] + landDuration[i]})
-		landRidesSortedStart = append(landRidesSortedStart, LandRide{landStartTime[i], landDuration[i], landStartTime[i] + landDuration[i]})
+		landRides = append(landRides, LandRide{landStartTime[i], landDuration[i], landStartTime[i] + landDuration[i]})
 	}
 
-	waterRidesEff := []WaterRide{}
-	waterRidesSortedStart := []WaterRide{}
+	waterRides := []WaterRide{}
 	for i := 0; i < len(waterStartTime); i++ {
-		waterRidesEff = append(waterRidesEff, WaterRide{waterStartTime[i], waterDuration[i], waterStartTime[i] + waterDuration[i]})
-		waterRidesSortedStart = append(waterRidesSortedStart, WaterRide{waterStartTime[i], waterDuration[i], waterStartTime[i] + waterDuration[i]})
+		waterRides = append(waterRides, WaterRide{waterStartTime[i], waterDuration[i], waterStartTime[i] + waterDuration[i]})
 	}
 
-	sort.Slice(landRidesEff, func(i, j int) bool { return landRidesEff[i].end < landRidesEff[j].end })
-	sort.Slice(waterRidesEff, func(i, j int) bool { return waterRidesEff[i].end < waterRidesEff[j].end })
-
-	sort.Slice(landRidesSortedStart, func(i, j int) bool { return landRidesSortedStart[i].start < landRidesSortedStart[j].start })
-	sort.Slice(waterRidesSortedStart, func(i, j int) bool { return waterRidesSortedStart[i].duration < waterRidesSortedStart[j].start })
-
+	sort.Slice(landRides, func(i, j int) bool { return landRides[i].end < landRides[j].end })
+	sort.Slice(waterRides, func(i, j int) bool { return waterRides[i].end < waterRides[j].end })
 
     // LAND -> WATER
     landRes := 1_000_000_007
-    for i := 0; i < len(waterRidesSortedStart); i++ {
-        if waterRidesSortedStart[i].start < landRidesEff[0].end {
-            landRes = min(landRes, landRidesEff[0].end + waterRidesSortedStart[i].duration)
+    for i := 0; i < len(waterRides); i++ {
+        if waterRides[i].start < landRides[0].end {
+            landRes = min(landRes, landRides[0].end + waterRides[i].duration)
         } else {
-            landRes = min(landRes, waterRidesSortedStart[i].start + waterRidesSortedStart[i].duration)
+            landRes = min(landRes, waterRides[i].start + waterRides[i].duration)
         }
     }
 
     // WATER TO LAND
     waterRes := 1_000_000_007
-    for i := 0; i < len(landRidesSortedStart); i++ {
-        if landRidesSortedStart[i].start < waterRidesEff[0].end {
-            landRes = min(landRes, waterRidesEff[0].end + landRidesSortedStart[i].duration)
+    for i := 0; i < len(landRides); i++ {
+        if landRides[i].start < waterRides[0].end {
+            landRes = min(landRes, waterRides[0].end + landRides[i].duration)
         } else {
-            landRes = min(landRes, landRidesSortedStart[i].start + landRidesSortedStart[i].duration)
+            landRes = min(landRes, landRides[i].start + landRides[i].duration)
         }
     }
 
