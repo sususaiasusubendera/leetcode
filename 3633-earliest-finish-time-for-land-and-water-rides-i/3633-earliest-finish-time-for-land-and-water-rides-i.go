@@ -21,17 +21,6 @@ func earliestFinishTime(landStartTime []int, landDuration []int, waterStartTime 
 
 
     // LAND -> WATER
-	// left, right := 0, len(waterRidesSortedStart)
-    // for left < right {
-    //     mid := left + ((right - left) / 2)
-    //     if waterRidesSortedStart[mid].start >= landRidesEff[0].end {
-    //         right = mid
-    //     } else {
-    //         left = mid + 1
-    //     }
-    // }
-    // idx = left
-
     landRes := 1_000_000_007
     for i := 0; i < len(waterRidesSortedStart); i++ {
         if waterRidesSortedStart[i].start < landRidesEff[0].end {
@@ -42,17 +31,6 @@ func earliestFinishTime(landStartTime []int, landDuration []int, waterStartTime 
     }
 
     // WATER TO LAND
-    // left, right = 0, len(landRidesSortedStart)
-    // for left < right {
-    //     mid := left + ((right - left) / 2)
-    //     if landRidesSortedStart[mid].start >= waterRidesEff[0].end {
-    //         right = mid
-    //     } else {
-    //         left = mid + 1
-    //     }
-    // }
-    // idx = left
-    
     waterRes := 1_000_000_007
     for i := 0; i < len(landRidesSortedStart); i++ {
         if landRidesSortedStart[i].start < waterRidesEff[0].end {
@@ -76,3 +54,7 @@ type WaterRide struct {
 	duration int
 	end      int
 }
+
+// array, greedy, sorting
+// time: O(nlog(n) + mlog(m) + n + m)
+// space: O(n + m)
