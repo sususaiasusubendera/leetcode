@@ -50,3 +50,6 @@ type WaterRide struct {
 // array, greedy, sorting
 // time: O(nlog(n) + mlog(m) + n + m)
 // space: O(n + m)
+
+// note
+// actually, sorting is unnecessary
