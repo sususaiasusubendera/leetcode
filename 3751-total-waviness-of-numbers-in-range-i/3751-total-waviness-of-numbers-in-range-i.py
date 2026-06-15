@@ -1,12 +1,24 @@
 class Solution:
     def totalWaviness(self, num1: int, num2: int) -> int:
-        def waviness(n: int) -> int:
-            s = str(n)
-            return sum(
-                (a < b > c) or (a > b < c) for a, b, c in zip(s, s[1:], s[2:])
-            )
+        ans = 0
+        for num in range(num1, num2 + 1):
+            ans += solve(num)
+        
+        return ans
 
-        return sum(waviness(n) for n in range(num1, num2 + 1))
+def solve(n):
+    s = str(n)
 
-# editorial
-# notice me senpai
+    if len(s) < 3:
+        return 0
+    
+    waviness = 0
+    for i in range(1, len(s) - 1):
+        if s[i - 1] < s[i] > s[i + 1] or s[i - 1] > s[i] < s[i + 1]:
+            waviness += 1
+    
+    return waviness
+
+# brute force
+# time: O((num2 - num1) * log(num2))
+# space: O(log(num2))
