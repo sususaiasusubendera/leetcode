@@ -23,3 +23,7 @@ func solve(n int) int {
 
     return waviness
 }
+
+// brute force
+// time: O((num2 - num1) * log(num2))
+// space: O(log(num2))
