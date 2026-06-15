@@ -6,31 +6,26 @@
  * }
  */
 func deleteMiddle(head *ListNode) *ListNode {
-    n := 0
-    curr := head
-    for curr != nil {
-        n++
-        curr = curr.Next
-    }
-
-    if n == 2 {
-        head.Next = nil
-        return head
-    } else if n == 1 {
+    // n == 1
+    if head.Next == nil {
         return nil
     }
 
-    mid := n / 2
-    prev := head
-    for i := 0; i < mid - 1; i++ {
-        prev = prev.Next
+    slow := head
+    fast := slow.Next.Next
+    for fast != nil && fast.Next != nil {
+        slow = slow.Next
+        fast = fast.Next.Next
     }
 
-    prev.Next = prev.Next.Next
+    // delete
+    slow.Next = slow.Next.Next
 
     return head
 }
 
-// linked list
+// floyd's tortoise & hare
 // time: O(n)
 // space: O(1)
+
+// AMAZING BEAUTIFUL solution
