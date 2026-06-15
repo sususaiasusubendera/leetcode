@@ -1,24 +1,24 @@
 class Solution:
-    def earliestFinishTime(
-        self,
-        landStartTime: List[int],
-        landDuration: List[int],
-        waterStartTime: List[int],
-        waterDuration: List[int],
-    ) -> int:
-        n = len(landStartTime)
-        m = len(waterStartTime)
-        res = inf
-        for i in range(n):
-            for j in range(m):
-                land = landStartTime[i] + landDuration[i]
-                land_water = max(land, waterStartTime[j]) + waterDuration[j]
-                res = min(res, land_water)
+    def earliestFinishTime(self, landStartTime: List[int], landDuration: List[int], waterStartTime: List[int], waterDuration: List[int]) -> int:
+        # land -> water
+        land_water = solve(landStartTime, landDuration, waterStartTime, waterDuration)
 
-                water = waterStartTime[j] + waterDuration[j]
-                water_land = max(water, landStartTime[i]) + landDuration[i]
-                res = min(res, water_land)
-        return res
+        # water -> land
+        water_land = solve(waterStartTime, waterDuration, landStartTime, landDuration)
 
-# editorial
-# notice senpai
+        return min(land_water, water_land)
+        
+def solve(start1, duration1, start2, duration2):
+    finish1 = inf
+    for i in range(len(start1)):
+        finish1 = min(finish1, start1[i] + duration1[i])
+
+    finish2 = inf
+    for i in range(len(start2)):
+        finish2 = min(finish2, max(finish1, start2[i]) + duration2[i])
+
+    return finish2 
+
+# array, greedy
+# time: O(n + m)
+# space: O(1)
