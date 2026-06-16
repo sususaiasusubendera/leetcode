@@ -12,5 +12,6 @@ func mapWordWeights(words []string, weights []int) string {
     return string(ans)
 }
 
+// array, string
 // time: O(nk)
 // space: O(n)
