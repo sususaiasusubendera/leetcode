@@ -2,11 +2,14 @@ class Solution:
     def mapWordWeights(self, words: List[str], weights: List[int]) -> str:
         ans = []
         for word in words:
-            s = 0
-            for c in word:
-                s += weights[ord(c) - ord("a")]
-            ans.append(chr(ord("z") - s % 26))
-        return "".join(ans)
+            weight = 0
+            for i in range(len(word)):
+                weight += weights[ord(word[i]) - ord('a')]
+        
+            ans.append(chr(ord('z') - (weight % 26)))
+        
+        return ''.join(ans)
 
-# notice me senpai
-# editorial
+# array, string
+# time: O(nk)
+# space: O(n)
