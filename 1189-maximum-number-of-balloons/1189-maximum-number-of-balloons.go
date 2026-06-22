@@ -21,4 +21,4 @@ func maxNumberOfBalloons(text string) int {
 
 // hash map, string
 // time: O(n)
-// space: 
+// space: O(1)
