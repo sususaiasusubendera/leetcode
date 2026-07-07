@@ -1,14 +1,20 @@
 class Solution:
-    def removeCoveredIntervals(self, A: List[List[int]]) -> int:
-        A.sort(key=lambda x: (x[0], -x[1]))
-        res = r = 0
+    def removeCoveredIntervals(self, intervals: List[List[int]]) -> int:
+        if len(intervals) == 1:
+            return 1
 
-        for st, end in A:
-            res += end > r
-            r = max(r, end)
-
+        intervals.sort(key=lambda x: (x[0], -x[1]))
+        res = 1
+        right = intervals[0][1]
+        for start, end in intervals:
+            if end <= right:
+                continue
+            else:
+                res += 1
+                right = end
+        
         return res
 
-# very doable
-# notice me senpai
-# solution from solutions (la_castille)
+# array, sorting
+# time: O(nlog(n))
+# space: O(1)
