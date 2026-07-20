@@ -1,28 +1,29 @@
 func shiftGrid(grid [][]int, k int) [][]int {
 	r, c := len(grid), len(grid[0])
-    n := r * c
+	n := r * c
 	k = k % n
 
-    if k == 0 { return grid }
+	if k == 0 {
+		return grid
+	}
 
-    rev(grid, 0, n-1)
-    rev(grid, 0, k-1)
-    rev(grid, k, n-1)
+	temp := make([]int, n)
+
+	for i := 0; i < r; i++ {
+		for j := 0; j < c; j++ {
+			temp[(i*c)+j] = grid[i][j]
+		}
+	}
+
+    temp = append(temp[len(temp)-k:], temp[:len(temp)-k]...)
+
+    for i := 0; i < len(temp); i++ {
+        grid[i/c][i%c] = temp[i]
+    }
 
     return grid
 }
 
-func rev(grid [][]int, i, j int) {
-    c := len(grid[0])
-    for i < j {
-        grid[i/c][i%c], grid[j/c][j%c] = grid[j/c][j%c], grid[i/c][i%c]
-        i++
-        j--
-    }
-}
-
-// array, simulation
+// array
 // time: O(n)
-// space: O(1)
-
-// this approach is (prolly) the most optimal one
+// space: O(n)
