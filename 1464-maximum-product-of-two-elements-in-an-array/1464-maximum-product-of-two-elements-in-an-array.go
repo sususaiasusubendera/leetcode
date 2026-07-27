@@ -6,4 +6,4 @@ func maxProduct(nums []int) int {
 
 // array, sorting
 // time: O(nlog(n))
-// space: O(1)
+// space: O(log(n))
