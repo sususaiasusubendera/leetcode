@@ -55,5 +55,5 @@ class Solution:
 
         return left_str + mid + right_str
 
-# editorial
+# editorial (combinatorial + trial and error method)
 # notice me senpai
