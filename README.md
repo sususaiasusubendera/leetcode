@@ -264,6 +264,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/sususaiasusubendera/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1396-count-servers-that-communicate](https://github.com/sususaiasusubendera/leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/sususaiasusubendera/leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [1406-stone-game-iii](https://github.com/sususaiasusubendera/leetcode/tree/master/1406-stone-game-iii) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/sususaiasusubendera/leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/sususaiasusubendera/leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/sususaiasusubendera/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
@@ -968,6 +969,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1266-minimum-time-visiting-all-points](https://github.com/sususaiasusubendera/leetcode/tree/master/1266-minimum-time-visiting-all-points) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/sususaiasusubendera/leetcode/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1390-four-divisors](https://github.com/sususaiasusubendera/leetcode/tree/master/1390-four-divisors) |
+| [1406-stone-game-iii](https://github.com/sususaiasusubendera/leetcode/tree/master/1406-stone-game-iii) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/sususaiasusubendera/leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/sususaiasusubendera/leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/sususaiasusubendera/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
@@ -1102,6 +1104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/sususaiasusubendera/leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [1340-jump-game-v](https://github.com/sususaiasusubendera/leetcode/tree/master/1340-jump-game-v) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/sususaiasusubendera/leetcode/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [1406-stone-game-iii](https://github.com/sususaiasusubendera/leetcode/tree/master/1406-stone-game-iii) |
 | [1411-number-of-ways-to-paint-n-3-grid](https://github.com/sususaiasusubendera/leetcode/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/sususaiasusubendera/leetcode/tree/master/1458-max-dot-product-of-two-subsequences) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/sususaiasusubendera/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
@@ -2211,6 +2214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0486-predict-the-winner](https://github.com/sususaiasusubendera/leetcode/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0877-stone-game) |
+| [1406-stone-game-iii](https://github.com/sususaiasusubendera/leetcode/tree/master/1406-stone-game-iii) |
 | [3462-vowels-game-in-a-string](https://github.com/sususaiasusubendera/leetcode/tree/master/3462-vowels-game-in-a-string) |
 ## Bitmask
 |  |
