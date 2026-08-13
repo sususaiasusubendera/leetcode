@@ -62,6 +62,6 @@ class Solution:
 
 # editorial (segment tree)
 # NOTICE ME SENPAI
-# from what read in discussion, this problem is tuff bruh
+# from what i read in discussion, this problem is tuff bruh
 # but someone said that this is the best problem to learn and implement seg tree
 # so yea i'll visit this later
