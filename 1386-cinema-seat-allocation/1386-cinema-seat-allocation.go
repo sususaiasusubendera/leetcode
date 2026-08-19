@@ -38,6 +38,6 @@ func maxNumberOfFamilies(n int, reservedSeats [][]int) int {
     return ans
 }
 
-// array, greedy, hash map
+// array, greedy
 // time: O(nlog(n))
 // space: O(1)
