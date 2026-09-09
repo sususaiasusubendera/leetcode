@@ -2,5 +2,6 @@ class Solution:
     def uniformArray(self, nums1: list[int]) -> bool:
         return True
 
-# NOTICE ME SENPAI (EASYYYY)
-# editorial
+# math
+# time: O(1)
+# space: O(1)
