@@ -16,3 +16,4 @@ class Solution:
 
 # editorial (dp + sliding window)
 # notice me senpai
+# too tired to think :(
