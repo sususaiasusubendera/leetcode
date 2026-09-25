@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/sususaiasusubendera/leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/sususaiasusubendera/leetcode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/sususaiasusubendera/leetcode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
+| [1096-brace-expansion-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/1096-brace-expansion-ii) |
 | [1160-letter-tile-possibilities](https://github.com/sususaiasusubendera/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1170-shortest-common-supersequence](https://github.com/sususaiasusubendera/leetcode/tree/master/1170-shortest-common-supersequence) |
 | [1189-maximum-number-of-balloons](https://github.com/sususaiasusubendera/leetcode/tree/master/1189-maximum-number-of-balloons) |
@@ -706,6 +707,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1006-vowel-spellchecker](https://github.com/sususaiasusubendera/leetcode/tree/master/1006-vowel-spellchecker) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/sususaiasusubendera/leetcode/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1039-find-the-town-judge](https://github.com/sususaiasusubendera/leetcode/tree/master/1039-find-the-town-judge) |
+| [1096-brace-expansion-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/1096-brace-expansion-ii) |
 | [1160-letter-tile-possibilities](https://github.com/sususaiasusubendera/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1189-maximum-number-of-balloons](https://github.com/sususaiasusubendera/leetcode/tree/master/1189-maximum-number-of-balloons) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sususaiasusubendera/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
@@ -867,6 +869,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0761-special-binary-string](https://github.com/sususaiasusubendera/leetcode/tree/master/0761-special-binary-string) |
 | [0900-reordered-power-of-2](https://github.com/sususaiasusubendera/leetcode/tree/master/0900-reordered-power-of-2) |
 | [1018-largest-perimeter-triangle](https://github.com/sususaiasusubendera/leetcode/tree/master/1018-largest-perimeter-triangle) |
+| [1096-brace-expansion-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/1096-brace-expansion-ii) |
 | [1200-minimum-absolute-difference](https://github.com/sususaiasusubendera/leetcode/tree/master/1200-minimum-absolute-difference) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/sususaiasusubendera/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1288-remove-covered-intervals](https://github.com/sususaiasusubendera/leetcode/tree/master/1288-remove-covered-intervals) |
@@ -1709,6 +1712,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/sususaiasusubendera/leetcode/tree/master/0224-basic-calculator) |
 | [0682-baseball-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0682-baseball-game) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/sususaiasusubendera/leetcode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
+| [1096-brace-expansion-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/1096-brace-expansion-ii) |
 | [1628-count-submatrices-with-all-ones](https://github.com/sususaiasusubendera/leetcode/tree/master/1628-count-submatrices-with-all-ones) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/sususaiasusubendera/leetcode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/sususaiasusubendera/leetcode/tree/master/1653-minimum-deletions-to-make-string-balanced) |
@@ -1884,6 +1888,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0854-making-a-large-island](https://github.com/sususaiasusubendera/leetcode/tree/master/0854-making-a-large-island) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/sususaiasusubendera/leetcode/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0945-snakes-and-ladders](https://github.com/sususaiasusubendera/leetcode/tree/master/0945-snakes-and-ladders) |
+| [1096-brace-expansion-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/1096-brace-expansion-ii) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sususaiasusubendera/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1306-jump-game-iii](https://github.com/sususaiasusubendera/leetcode/tree/master/1306-jump-game-iii) |
@@ -2203,6 +2208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0401-binary-watch](https://github.com/sususaiasusubendera/leetcode/tree/master/0401-binary-watch) |
 | [0679-24-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0679-24-game) |
 | [0756-pyramid-transition-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0756-pyramid-transition-matrix) |
+| [1096-brace-expansion-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/1096-brace-expansion-ii) |
 | [1160-letter-tile-possibilities](https://github.com/sususaiasusubendera/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/sususaiasusubendera/leetcode/tree/master/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/sususaiasusubendera/leetcode/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
