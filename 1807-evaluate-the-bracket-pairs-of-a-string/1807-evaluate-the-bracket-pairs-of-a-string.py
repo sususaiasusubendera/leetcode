@@ -8,10 +8,10 @@ class Solution:
             elif c == ")":
                 ans.append(d.get(s[start + 1 : i], "?"))
                 start = -1
-            elif start < 0:
+            elif start == -1:
                 ans.append(c)
         return "".join(ans)
 
-# notice me senpai
-# editorial
-# doable, please solve this
+# array, hash map, string
+# time: O(n + m)
+# space: O(n + m)
