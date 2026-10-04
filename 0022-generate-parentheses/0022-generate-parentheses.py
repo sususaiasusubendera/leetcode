@@ -1,24 +1,26 @@
 class Solution:
     def generateParenthesis(self, n: int) -> list[str]:
-        if n == 1: return ["()"]
-
-        n -= 1
+        temp = []
         res = []
 
-        def dfs(O, C, s):
-            if not O and not C:
-                res.append(s + ")")
+        def dfs(open, close):
+            if not open and not close:
+                res.append("".join(temp))
                 return
-
-            if O > 0:
-                dfs(O - 1, C, s + "(")
-
-            if C >= O:
-                dfs(O, C - 1, s + ")")
-
-        dfs(n, n, "(")
-
+            
+            if open > 0:
+                temp.append("(")
+                dfs(open - 1, close)
+                temp.pop()
+            
+            if close > open:
+                temp.append(")")
+                dfs(open, close - 1)
+                temp.pop()
+        
+        dfs(n, n)
         return res
 
-# notice me senpai
-# solution from solutions (la_castille)
+# backtracking, string
+# time: O(nC_n)
+# space: O(nC_n)
