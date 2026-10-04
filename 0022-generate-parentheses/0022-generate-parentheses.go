@@ -29,4 +29,4 @@ func generateParenthesis(n int) []string {
 
 // backtracking, string
 // time: O(nC_n)
-// space: O(nC_n
+// space: O(nC_n)
