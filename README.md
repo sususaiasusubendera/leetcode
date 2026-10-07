@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/sususaiasusubendera/leetcode/tree/master/0224-basic-calculator) |
 | [0242-valid-anagram](https://github.com/sususaiasusubendera/leetcode/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/sususaiasusubendera/leetcode/tree/master/0290-word-pattern) |
+| [0301-remove-invalid-parentheses](https://github.com/sususaiasusubendera/leetcode/tree/master/0301-remove-invalid-parentheses) |
 | [0383-ransom-note](https://github.com/sususaiasusubendera/leetcode/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0392-is-subsequence) |
 | [0412-fizz-buzz](https://github.com/sususaiasusubendera/leetcode/tree/master/0412-fizz-buzz) |
@@ -1906,6 +1907,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0112-path-sum) |
 | [0226-invert-binary-tree](https://github.com/sususaiasusubendera/leetcode/tree/master/0226-invert-binary-tree) |
+| [0301-remove-invalid-parentheses](https://github.com/sususaiasusubendera/leetcode/tree/master/0301-remove-invalid-parentheses) |
 | [0407-trapping-rain-water-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/sususaiasusubendera/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0684-redundant-connection](https://github.com/sususaiasusubendera/leetcode/tree/master/0684-redundant-connection) |
@@ -2232,6 +2234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0022-generate-parentheses](https://github.com/sususaiasusubendera/leetcode/tree/master/0022-generate-parentheses) |
 | [0037-sudoku-solver](https://github.com/sususaiasusubendera/leetcode/tree/master/0037-sudoku-solver) |
+| [0301-remove-invalid-parentheses](https://github.com/sususaiasusubendera/leetcode/tree/master/0301-remove-invalid-parentheses) |
 | [0401-binary-watch](https://github.com/sususaiasusubendera/leetcode/tree/master/0401-binary-watch) |
 | [0679-24-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0679-24-game) |
 | [0756-pyramid-transition-matrix](https://github.com/sususaiasusubendera/leetcode/tree/master/0756-pyramid-transition-matrix) |
