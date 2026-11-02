@@ -237,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/sususaiasusubendera/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/sususaiasusubendera/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/sususaiasusubendera/leetcode/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0474-ones-and-zeroes](https://github.com/sususaiasusubendera/leetcode/tree/master/0474-ones-and-zeroes) |
 | [0486-predict-the-winner](https://github.com/sususaiasusubendera/leetcode/tree/master/0486-predict-the-winner) |
 | [0498-diagonal-traverse](https://github.com/sususaiasusubendera/leetcode/tree/master/0498-diagonal-traverse) |
@@ -905,6 +906,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/sususaiasusubendera/leetcode/tree/master/0242-valid-anagram) |
 | [0274-h-index](https://github.com/sususaiasusubendera/leetcode/tree/master/0274-h-index) |
 | [0368-largest-divisible-subset](https://github.com/sususaiasusubendera/leetcode/tree/master/0368-largest-divisible-subset) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0594-longest-harmonious-subsequence](https://github.com/sususaiasusubendera/leetcode/tree/master/0594-longest-harmonious-subsequence) |
 | [0611-valid-triangle-number](https://github.com/sususaiasusubendera/leetcode/tree/master/0611-valid-triangle-number) |
 | [0628-maximum-product-of-three-numbers](https://github.com/sususaiasusubendera/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
@@ -1069,6 +1071,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0396-rotate-function](https://github.com/sususaiasusubendera/leetcode/tree/master/0396-rotate-function) |
 | [0412-fizz-buzz](https://github.com/sususaiasusubendera/leetcode/tree/master/0412-fizz-buzz) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/sususaiasusubendera/leetcode/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/sususaiasusubendera/leetcode/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0486-predict-the-winner](https://github.com/sususaiasusubendera/leetcode/tree/master/0486-predict-the-winner) |
 | [0628-maximum-product-of-three-numbers](https://github.com/sususaiasusubendera/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0679-24-game](https://github.com/sususaiasusubendera/leetcode/tree/master/0679-24-game) |
