@@ -1,36 +1,36 @@
 type ProductOfNumbers struct {
-    prefix []int
+    pre []int
 }
 
 
 func Constructor() ProductOfNumbers {
     return ProductOfNumbers{
-        prefix: []int{1},
+        pre: []int{1},
     }
 }
 
 
 func (this *ProductOfNumbers) Add(num int)  {
-    if num == 0 { // reset the prefix product if num == 0
-        this.prefix = []int{1}
+    if num == 0 {
+        this.pre = []int{1}
     } else {
-        newPre := this.prefix[len(this.prefix)-1] * num
-        this.prefix = append(this.prefix, newPre)
+        n := len(this.pre)
+        this.pre = append(this.pre, this.pre[n-1]*num)
     }
 }
 
 
 func (this *ProductOfNumbers) GetProduct(k int) int {
-    if k >= len(this.prefix) {
+    n := len(this.pre)
+    if k >= n {
         return 0
     }
-    return this.prefix[len(this.prefix)-1] / this.prefix[(len(this.prefix)-1)-k]
+    return this.pre[n-1] / this.pre[n-k-1]
 }
 
-// prefix product approach
+// array, prefix sum
 // time: O(1)
-// space: O(1)
-
+// space: O(n)
 
 /**
  * Your ProductOfNumbers object will be instantiated and called as such:
